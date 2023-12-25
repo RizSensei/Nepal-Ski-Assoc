@@ -29,30 +29,53 @@
     ></script>
   </head>
   <body>
-    <div class="relative w-full h-full">
+    <section class="relative w-full h-full">
+      <!-- mobile-navbar-dropdown -->
+      <div
+        class="absolute z-20 hidden text-black text-sm rounded-lg duration-500 ease-in-out bg-white right-14 top-14"
+        id="mobile_navbar"
+      >
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">HOME</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">ORGANIZATION</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">NEWS</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">GALLERY</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">CONTACT US</a>
+        </h1>
+      </div>
       <header
         class="absolute top-0 w-full h-auto py-2 text-white bg-gradient-to-b from-primary to-transparent opacity-90"
       >
-        <div class="container mx-10 flex items-center justify-between border border-b-white border-t-0 border-x-0 pb-2">
+        <div
+          class="w-full container mx-auto px-5 flex items-center justify-between border border-b-white border-t-0 border-x-0 pb-2"
+        >
           <div class="flex items-center space-x-5">
             <img
-              src="../public/images/NSA_logo.png"
+              src="../public/images/logo.png"
               alt="NSA_logo"
-              class="w-10 h-10"
+              class="w-24 h-16"
             />
             <nav class="hidden space-x-5 text-xs lg:flex">
-              <h1>HOME</h1>
-              <h1>ORGANIZATION</h1>
-              <h1>NEWS</h1>
-              <h1>GALLERY</h1>
-              <h1>CONTACT US</h1>
+              <h1><a href="">HOME</a></h1>
+              <h1><a href="">ORGANIZATION</a></h1>
+              <h1><a href="">NEWS</a></h1>
+              <h1><a href="">GALLERY</a></h1>
+              <h1><a href="">CONTACT US</a></h1>
             </nav>
           </div>
           <button id="nav-hamburger" class="block lg:hidden">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div
-            class="absolute z-20 hidden text-black duration-500 ease-in-out bg-white right-5 top-12"
+          <!-- <div
+            class="absolute z-20 hidden text-black text-sm duration-500 ease-in-out bg-white right-5 top-12"
             id="mobile_navbar"
           >
             <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
@@ -70,9 +93,14 @@
             <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
               <a href="">CONTACT US</a>
             </h1>
-          </div>
-       
-          <input type="search" name="" placeholder="Search ..." class="p-1 text-sm rounded-xl">
+          </div> -->
+
+          <input
+            type="search"
+            name=""
+            placeholder="Search ..."
+            class="hidden p-1.5 text-sm rounded-xl text-black focus:outline-none focus:border-primary lg:block"
+          />
         </div>
       </header>
       <img
@@ -85,7 +113,7 @@
       >
         <div class="relative flex flex-col space-y-3">
           <div
-            class="flex flex-col lg:space-y-5 font-bold text-2xl md:text-4xl lg:text-[70px] text-right leading-normal"
+            class="flex flex-col font-bold text-2xl md:text-4xl lg:text-5xl xl:text-[70px] text-right leading-none"
           >
             <span class="text-secondary">STRENGTHEN </span>
             <span class="text-primary">OUR RESOLVE</span>
@@ -104,7 +132,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </section>
 
     <section
       class="items-center justify-center px-10 py-5 mt-32 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex"
@@ -133,30 +161,32 @@
     </section>
 
     <section class="relative w-full h-full">
+      <!-- Background Image -->
       <img
         src="../public/images/background_2.png"
         alt="Background image"
         class="hidden object-cover w-full h-full md:block"
       />
       <img
-        src="https://images.pexels.com/photos/2197924/pexels-photo-2197924.jpeg?auto=compress&cs=tinysrgb&w=600"
+        src="https://images.pexels.com/photos/2097110/pexels-photo-2097110.jpeg?auto=compress&cs=tinysrgb&w=600"
         alt="Background image"
         class="object-cover w-full h-full md:hidden"
       />
+      <!-- Text Overlay -->
       <div
-        class="absolute w-full -translate-x-1/2 top-12 md:top-16 lg:top-24 left-1/2"
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
       >
         <div
           class="flex flex-col items-center justify-center space-y-5 text-white"
         >
-          <h1 class="text-4xl md:text-[50px] lg:text-[60px]">
-            <span class="font-semibold">Ski Region</span> in Nepal
+          <h1 class="text-4xl md:text-[50px] lg:text-[60px] font-semibold">
+            Ski Region in Nepal
           </h1>
-          <h1 class="text-xs font-bold text-primary">
+          <h1 class="text-xs font-bold">
             'S INNOVATIVE ELECTRIC FOILING RACEBOAT
           </h1>
           <div>
-            <button class="text-sm bg-primary italic py-1.5 px-4 rounded-lg">
+            <button class="text-sm bg-secondary italic py-1.5 px-4 rounded-lg">
               Read more ->
             </button>
           </div>
@@ -235,14 +265,14 @@
           <div class="grid gap-4">
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/2016572/pexels-photo-2016572.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
@@ -251,14 +281,14 @@
           <div class="grid gap-4">
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/1705667/pexels-photo-1705667.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/2433356/pexels-photo-2433356.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
@@ -267,30 +297,30 @@
           <div class="grid gap-4">
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/1748597/pexels-photo-1748597.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/352093/pexels-photo-352093.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
             </div>
           </div>
-          <div class="grid">
+          <div class="grid gap-4">
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/286581/pexels-photo-286581.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full"
+                class="h-full max-w-full"
                 src="https://images.pexels.com/photos/3647134/pexels-photo-3647134.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt=""
               />
@@ -300,22 +330,13 @@
       </div>
     </section>
 
-    <!-- <section class="w-full h-full my-10">
-      <div class="flex justify-center space-x-5">
-        <img
-          src="../public/images/nepal_olympic_committee_logo.png"
-          alt=""
-          class="aspect-square"
-        />
-        <img src="../public/images/FIS_logo.png" alt="" class="aspect-square" />
-      </div>
-    </section> -->
-
     <section class="w-full mt-10">
-      <div class="grid grid-cols-3 divide-x text-center border border-y-gray-200 text-xs">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x text-center border border-y-gray-200 text-xs"
+      >
         <div class="py-2">
           <h1>National Sports Council, Tripureshwor, Kathmandu</h1>
-          <h1 class="font-bold">Mailing Address: </h1>
+          <h1 class="font-bold">Mailing Address:</h1>
         </div>
         <div class="py-2">
           <h1>nepalski@nocnepal.org. npski_nepal@yahoo.com</h1>
@@ -328,37 +349,54 @@
       </div>
     </section>
 
-    <footer class="relative h-[75vh] w-full">
+    <footer class="relative h-[90vh] md:h-[60vh] w-full">
       <img
         src="../public/images/fade_background.png"
         alt=""
         class="object-cover w-full h-full"
       />
       <div
-        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-blue-200"
+        class="absolute w-full -translate-x-1/2 -translate-y-1 top-1/2 left-1/2"
       >
-        <div class="flex flex-col">
-          <img
-            src="../public/images/logo.png"
-            alt="NSA Logo"
-            class="w-28 h-20 md:h-28 md:w-36"
-          />
-          <nav
-            class="space-y-2 text-xs font-semibold md:space-x-5 md:space-y-0 md:flex text-primary"
-          >
-            <h1>HOME</h1>
-            <h1>ORGANIZATION</h1>
-            <h1>NEWS</h1>
-            <h1>GALLERY</h1>
-            <h1>CONTACT US</h1>
-          </nav>
+        <div class="container mx-auto px-10 flex justify-between">
+          <div class="flex flex-col space-y-5">
+            <img
+              src="../public/images/logo.png"
+              alt="NSA Logo"
+              class="w-28 h-20 md:h-28 md:w-36"
+            />
+            <nav
+              class="text-xs font-semibold md:space-x-5 md:flex text-primary"
+            >
+              <h1>HOME</h1>
+              <h1>ORGANIZATION</h1>
+              <h1>NEWS</h1>
+              <h1>GALLERY</h1>
+              <h1>CONTACT US</h1>
+            </nav>
+          </div>
+          <div class="flex flex-col space-y-5">
+            <h1 class="text-sm text-primary font-semibold">ASSOCIATED WITH:</h1>
+            <div class="space-y-2 md:flex md:space-x-10">
+              <img
+                src="../public/images/nepal_olympic_committee_logo.png"
+                alt=""
+                class="w-28 h-28 md:w-24 md:h-24"
+              />
+              <img
+                src="../public/images/FIS_logo.png"
+                alt=""
+                class="w-28 h-28 md:w-24 md:h-24"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
     <section class="w-full">
       <div class="h-12 flex justify-between px-12">
-        <div class="flex space-x-2 text-primary py-4">
+        <div class="flex space-x-5 text-primary py-4">
           <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -366,7 +404,11 @@
         </div>
         <div class="flex space-x-2">
           <div class="overflow-hidden">
-            <img src="../public/images/vector.png" alt="" class="h-36 transform -scale-x-100">
+            <img
+              src="../public/images/vector.png"
+              alt=""
+              class="h-36 transform -scale-x-100"
+            />
           </div>
           <div class="flex space-x-5 text-xs py-4">
             <h1>Terms & Conditions</h1>
@@ -384,5 +426,4 @@
     crossorigin="anonymous"
   ></script>
   <script src="../public/js/navbar.js"></script>
-  <script src="../public/js/carasouel.js"></script>
 </html>
