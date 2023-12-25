@@ -22,30 +22,57 @@
       }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="../public/js/services.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e6d586221.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="relative w-full h-full">
       <header
-        class="absolute top-0 w-full h-auto px-10 py-1 text-white bg-primary opacity-90"
+        class="absolute top-0 w-full h-auto py-2 text-white bg-gradient-to-b from-primary to-transparent opacity-90"
       >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
+        <div class="container mx-10 flex items-center justify-between border border-b-white border-t-0 border-x-0 pb-2">
+          <div class="flex items-center space-x-5">
             <img
               src="../public/images/NSA_logo.png"
               alt="NSA_logo"
               class="w-10 h-10"
             />
-            <h1>Nepal Ski Association</h1>
+            <nav class="hidden space-x-5 text-xs lg:flex">
+              <h1>HOME</h1>
+              <h1>ORGANIZATION</h1>
+              <h1>NEWS</h1>
+              <h1>GALLERY</h1>
+              <h1>CONTACT US</h1>
+            </nav>
           </div>
-          <nav class="flex space-x-5 text-sm">
-            <h1>HOME</h1>
-            <h1>ORGANIZATION</h1>
-            <h1>NEWS</h1>
-            <h1>GALLERY</h1>
-            <h1>CONTACT US</h1>
-          </nav>
+          <button id="nav-hamburger" class="block lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="absolute z-20 hidden text-black duration-500 ease-in-out bg-white right-5 top-12"
+            id="mobile_navbar"
+          >
+            <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
+              <a href="">HOME</a>
+            </h1>
+            <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
+              <a href="">ORGANIZATION</a>
+            </h1>
+            <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
+              <a href="">NEWS</a>
+            </h1>
+            <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
+              <a href="">GALLERY</a>
+            </h1>
+            <h1 class="px-5 py-3 hover:bg-gray-400 hover:text-white">
+              <a href="">CONTACT US</a>
+            </h1>
+          </div>
+       
+          <input type="search" name="" placeholder="Search ..." class="p-1 text-sm rounded-xl">
         </div>
       </header>
       <img
@@ -53,44 +80,48 @@
         alt="SKI Background"
         class="object-cover w-full h-full"
       />
-      <section class="absolute top-[44%] right-[5.5rem] max-w-4xl">
-        <div class="relative flex flex-col">
-          <div class="font-bold text-[70px] text-right leading-none">
-            <h1 class="text-secondary">STRENGTHEN</h1>
-            <h1 class="text-primary">OUR RESOLVE</h1>
+      <section
+        class="absolute z-10 top-[44%] right-5 md:right-[5.5rem] max-w-4xl"
+      >
+        <div class="relative flex flex-col space-y-3">
+          <div
+            class="flex flex-col lg:space-y-5 font-bold text-2xl md:text-4xl lg:text-[70px] text-right leading-normal"
+          >
+            <span class="text-secondary">STRENGTHEN </span>
+            <span class="text-primary">OUR RESOLVE</span>
           </div>
           <img
             src="../public/images/vector.png"
             alt="Vector image"
             class="w-full h-full"
           />
-          <h1
-            class="absolute flex text-xl font-bold leading-none text-right text-primary bottom-28 left-44"
+          <div
+            class="absolute flex flex-col text-sm font-bold leading-none text-right lg:text-base text-primary bottom-16 md:bottom-28 left-16 md:left-44"
           >
-            ALWAYS LOOK <br />
-            ON THE SKI SIDE <br />
-            OF LIFE
-          </h1>
+            <span>ALWAYS LOOK</span>
+            <span>ON THE BRIGHT SIDE</span>
+            <span>OF LIFE</span>
+          </div>
         </div>
       </section>
     </div>
 
     <section
-      class="flex items-center justify-center px-10 py-5 mt-32 mb-24 space-x-20"
+      class="items-center justify-center px-10 py-5 mt-32 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex"
     >
-      <div class="aspect-square h-[400px]">
-        <img src="../public/images/President_image.png" alt="" />
+      <div class="aspect-square h-[300px] md:h-[350px] lg:h-[400px]">
+        <img src="../public/images/President_image.png" alt="President" />
       </div>
-      <article class="flex flex-col max-w-xs space-y-5">
-        <h1 class="text-2xl font-semibold text-primary">
+      <article class="flex flex-col space-y-5 md:max-w-xs">
+        <h1 class="text-xl font-semibold lg:text-2xl text-primary">
           Message from President
         </h1>
-        <h1 class="text-base">
+        <p class="text-sm lg:text-base">
           On behalf of Nepal Olympic committee, it is with great pride that we
           have now hosted "NOC Nepal" website to further the Olympic movement
           and to work together towards bringing the Olympic values to life. From
-          the first modern Olympic..........
-        </h1>
+          the first modern Olympic...
+        </p>
         <div>
           <button
             class="text-sm bg-secondary text-white italic py-1.5 px-4 rounded-lg"
@@ -101,17 +132,24 @@
       </article>
     </section>
 
-    <section class="relative h-[100vh] w-full">
+    <section class="relative w-full h-full">
       <img
         src="../public/images/background_2.png"
         alt="Background image"
-        class="object-cover w-full h-full"
+        class="hidden object-cover w-full h-full md:block"
       />
-      <div class="absolute -translate-x-1/2 top-24 left-1/2">
+      <img
+        src="https://images.pexels.com/photos/2197924/pexels-photo-2197924.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Background image"
+        class="object-cover w-full h-full md:hidden"
+      />
+      <div
+        class="absolute w-full -translate-x-1/2 top-12 md:top-16 lg:top-24 left-1/2"
+      >
         <div
-          class="flex flex-col items-center justify-center space-y-2 text-white"
+          class="flex flex-col items-center justify-center space-y-5 text-white"
         >
-          <h1 class="text-[60px]">
+          <h1 class="text-4xl md:text-[50px] lg:text-[60px]">
             <span class="font-semibold">Ski Region</span> in Nepal
           </h1>
           <h1 class="text-xs font-bold text-primary">
@@ -127,12 +165,14 @@
     </section>
 
     <section class="container w-full h-full mx-auto mt-16">
-      <h1 class="text-[50px]">
+      <h1 class="text-4xl md:text-[50px]">
         <span class="text-primary">Latest </span
         ><span class="font-bold text-secondary">News</span>
       </h1>
-      <div class="flex px-24 mt-12 space-x-10">
-        <div class="flex flex-col max-w-xs space-y-3">
+      <div
+        class="grid grid-cols-1 px-12 mt-12 md:px-24 gap-y-5 gap-x-10 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div class="flex flex-col space-y-3">
           <h1 class="leading-none">
             It will benefit from superior, affordable energy output
           </h1>
@@ -144,9 +184,10 @@
             src="../public/images/news_image.png"
             alt=""
             class="aspect-square"
+            loading="lazy"
           />
         </div>
-        <div class="flex flex-col max-w-xs space-y-3">
+        <div class="flex flex-col space-y-3">
           <h1 class="leading-none">
             It will benefit from superior, affordable energy output
           </h1>
@@ -158,9 +199,10 @@
             src="../public/images/news_image.png"
             alt=""
             class="aspect-square"
+            loading="lazy"
           />
         </div>
-        <div class="flex flex-col max-w-xs space-y-3">
+        <div class="flex flex-col space-y-3">
           <h1 class="leading-none">
             It will benefit from superior, affordable energy output
           </h1>
@@ -172,21 +214,23 @@
             src="../public/images/news_image.png"
             alt=""
             class="aspect-square"
+            loading="lazy"
           />
         </div>
       </div>
     </section>
 
+    <!-- Gallery -->
     <section class="container relative mx-auto mt-2">
-      <div class="absolute top-0 px-24 -z-10">
+      <div class="absolute top-0 px-12 md:px-24 -z-10">
         <img
           src="../public/images/vector.png"
           alt="vector image"
           class="transform -scale-x-100"
         />
       </div>
-      <div class="pt-36">
-        <h1 class="mb-5 text-5xl text-primary">Gallery</h1>
+      <div class="pt-16 md:pt-36">
+        <h1 class="mb-8 text-4xl md:text-[50px] text-primary">Gallery</h1>
         <div class="grid grid-cols-2 gap-4 px-12 md:grid-cols-4">
           <div class="grid gap-4">
             <div>
@@ -256,7 +300,7 @@
       </div>
     </section>
 
-    <section class="w-full h-full my-10">
+    <!-- <section class="w-full h-full my-10">
       <div class="flex justify-center space-x-5">
         <img
           src="../public/images/nepal_olympic_committee_logo.png"
@@ -264,7 +308,23 @@
           class="aspect-square"
         />
         <img src="../public/images/FIS_logo.png" alt="" class="aspect-square" />
-        <img src="" alt="" />
+      </div>
+    </section> -->
+
+    <section class="w-full mt-10">
+      <div class="grid grid-cols-3 divide-x text-center border border-y-gray-200 text-xs">
+        <div class="py-2">
+          <h1>National Sports Council, Tripureshwor, Kathmandu</h1>
+          <h1 class="font-bold">Mailing Address: </h1>
+        </div>
+        <div class="py-2">
+          <h1>nepalski@nocnepal.org. npski_nepal@yahoo.com</h1>
+          <h1 class="font-bold">Email</h1>
+        </div>
+        <div class="py-2">
+          <h1>977-1-4258514, 977-1-4278633</h1>
+          <h1 class="font-bold">Phone</h1>
+        </div>
       </div>
     </section>
 
@@ -275,15 +335,17 @@
         class="object-cover w-full h-full"
       />
       <div
-        class="absolute h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-blue-200"
       >
-        <div class="flex flex-col items-center h-full justify-evenly">
+        <div class="flex flex-col">
           <img
             src="../public/images/logo.png"
             alt="NSA Logo"
-            class="w-40 h-32"
+            class="w-28 h-20 md:h-28 md:w-36"
           />
-          <nav class="text-sm font-semibold md:space-x-5 md:flex text-primary">
+          <nav
+            class="space-y-2 text-xs font-semibold md:space-x-5 md:space-y-0 md:flex text-primary"
+          >
             <h1>HOME</h1>
             <h1>ORGANIZATION</h1>
             <h1>NEWS</h1>
@@ -293,6 +355,27 @@
         </div>
       </div>
     </footer>
+
+    <section class="w-full">
+      <div class="h-12 flex justify-between px-12">
+        <div class="flex space-x-2 text-primary py-4">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <div class="flex space-x-2">
+          <div class="overflow-hidden">
+            <img src="../public/images/vector.png" alt="" class="h-36 transform -scale-x-100">
+          </div>
+          <div class="flex space-x-5 text-xs py-4">
+            <h1>Terms & Conditions</h1>
+            <h1>Privacy Policy</h1>
+            <h1>Cookie Policy</h1>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 
   <!-- script -->
@@ -300,5 +383,6 @@
     src="https://kit.fontawesome.com/0a09f83869.js"
     crossorigin="anonymous"
   ></script>
-  <script src="../public/js/index.js"></script>
+  <script src="../public/js/navbar.js"></script>
+  <script src="../public/js/carasouel.js"></script>
 </html>
