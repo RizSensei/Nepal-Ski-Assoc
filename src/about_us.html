@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../public/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- style -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+      * {
+        font-family: "Inter";
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style>
+      .tab-button.active {
+        background-color: #fff;
+        border-color: #4299e1;
+        color: #ed1c24;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e6d586221.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./components/global/component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./components/about_us/component.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="relative w-full h-full">
+      <header-component></header-component>
+
+      <div class="absolute top-0 w-full h-full">
+        <hero-background-component></hero-background-component>
+
+        <div class="container w-full px-10 mx-auto mt-10">
+          <div class="flex space-x-5 font-medium">
+            <button
+              onclick="showTab('Introduction')"
+              class="tab-button text-primary"
+            >
+              Introduction
+            </button>
+            <button onclick="showTab('BOD')" class="tab-button text-primary">
+              Board of Directors
+            </button>
+            <button
+              onclick="showTab('Management')"
+              class="tab-button text-primary"
+            >
+              Management Team
+            </button>
+          </div>
+          <hr class="w-full h-0.5 bg-gray-200 mt-3" />
+          <div
+            id="Introduction"
+            class="flex flex-col mt-5 space-y-3 tabcontent"
+          >
+            <h1 class="text-3xl font-bold text-primary">
+              Nepal Ski Association
+            </h1>
+            <p class="text-sm">
+              Nepal Ski Association is the official federation regulating skiing
+              within Nepal. Nepal Ski Association is founded to promote ski
+              sports in Nepal. Winter sports are generally more common in the
+              Himalayan regions of Nepal.
+            </p>
+            <div class="w-full">
+              <h1 class="text-lg font-semibold text-primary mt-10">
+                MISSION AND VISION
+              </h1>
+              <hr class="h-1 w-36 bg-gradient-to-r from-primary to-secondary" />
+            </div>
+            <div class="w-full mt-5">
+              <h1 class="text-base font-semibold text-secondary">Mission</h1>
+              <ul class="px-10 mt-1 list-disc text-sm">
+                <li>
+                  Identify, nurture, and develop the next generation of Nepali
+                  skiing talent by implementing robust grassroots programs,
+                  talent identification initiatives, and youth engagement
+                  activities
+                </li>
+                <li>
+                  Strive to cultivate a culture of excellence in alpine sports
+                  by providing world-class training, resources, and support to
+                  athletes at all levels
+                </li>
+                <li>
+                  Represent Nepal with pride on the international skiing stage,
+                  participating in prestigious competitions, and consistently
+                  achieving commendable results, showcasing the nation's skiing
+                  prowess
+                </li>
+                <li>
+                  Position Nepal as a premier destination for winter sports
+                  tourism, attracting enthusiasts from around the world and
+                  contributing to the country's overall tourism sector
+                </li>
+              </ul>
+            </div>
+            <div class="w-full">
+              <h1 class="text-base font-semibold text-secondary">Vision</h1>
+              <p class="px-8 mt-1 text-sm">
+                "To be a globally recognized hub for alpine excellence,
+                fostering a passion for skiing, and promoting Nepal as a premier
+                destination for winter sports."
+              </p>
+            </div>
+          </div>
+          <div
+            id="BOD"
+            class="flex flex-col items-center hidden mt-5 tabcontent"
+          >
+            <member-card-component></member-card-component>
+            <div class="grid grid-cols-5 gap-4 mt-5">
+              <script>
+                for (var i = 0; i < 5; i++) {
+                  document.write(`
+                  <member-card-component></member-card-component>
+                  `);
+                }
+              </script>
+            </div>
+          </div>
+          <div
+            id="Management"
+            class="flex flex-col items-center hidden tabcontent mt-5"
+          >
+            <member-card-component></member-card-component>
+            <div class="grid grid-cols-5 gap-4 mt-5">
+              <script>
+                for (var i = 0; i < 5; i++) {
+                  document.write(`
+                <member-card-component></member-card-component>
+                `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <newsletter-component></newsletter-component>
+
+        <footer-component></footer-component>
+      </div>
+    </div>
+  </body>
+
+  <!-- script -->
+  <script src="../public/js/tabs.js"></script>
+  <script
+    src="https://kit.fontawesome.com/0a09f83869.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
