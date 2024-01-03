@@ -17,11 +17,11 @@ class HeaderComponent extends HTMLElement{
                 class="w-24 h-16"
               />
               <nav class="hidden space-x-10 text-xs lg:flex">
-                <h1><a href="./index.html">HOME</a></h1>
-                <h1><a href="./about_us.html">ORGANIZATION</a></h1>
-                <h1><a href="">NEWS</a></h1>
-                <h1><a href="./gallery.html">GALLERY</a></h1>
-                <h1><a href="./contact.html">CONTACT US</a></h1>
+                <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
+                <h1 class="font-medium"><a href="./about_us.html">ORGANIZATION</a></h1>
+                <h1 class="font-medium"><a href="./news.html">NEWS</a></h1>
+                <h1 class="font-medium"><a href="./gallery.html">GALLERY</a></h1>
+                <h1 class="font-medium"><a href="./contact.html">CONTACT US</a></h1>
               </nav>
               <div>
                 <img
@@ -36,6 +36,26 @@ class HeaderComponent extends HTMLElement{
             </button>
           </div>
         </header>
+        <div
+        class="absolute z-20 hidden text-sm text-black duration-500 ease-in-out bg-white rounded-lg right-[0.8rem] top-[5.2rem]"
+        id="mobile_navbar"
+      >
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">HOME</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">ORGANIZATION</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">NEWS</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">GALLERY</a>
+        </h1>
+        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          <a href="">CONTACT US</a>
+        </h1>
+      </div>
       `
     }
   }
@@ -144,26 +164,23 @@ class HeroBackgroundComponent extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-      <div class="h-[400px] overflow-y-hidden">
+      <div class="h-[400px] overflow-hidden">
+        <img
+          src="../public/images/winter-ski-panorama-alps.jpg"
+          alt="SKI Background"
+          class="object-cover w-full h-full"
+        />
+        <section class="h-[300px] overflow-hidden absolute z-10 top-[100px] right-5 md:right-[5.5rem] max-w-4xl">
+          <div class=" flex flex-col font-bold text-2xl md:text-4xl lg:text-5xl xl:text-[70px] text-right leading-none">
             <img
-              src="../public/images/winter-ski-panorama-alps.jpg"
-              alt="SKI Background"
-              class="object-cover w-full h-full"
+              src="../public/images/vector.png"
+              alt="Vector image"
+              class="w-full h-full opacity-40"
             />
-            <section
-              class="absolute z-10 top-[100px] right-5 md:right-[5.5rem] max-w-4xl"
-            >
-              <div
-                class="flex flex-col font-bold text-2xl md:text-4xl lg:text-5xl xl:text-[70px] text-right leading-none"
-              >
-                <img
-                  src="../public/images/vector.png"
-                  alt="Vector image"
-                  class="w-full h-full opacity-40"
-                />
-              </div>
-            </section>
           </div>
+        </section>
+      </div>
+
       `;
     }
   }
