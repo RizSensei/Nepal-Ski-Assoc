@@ -98,12 +98,12 @@ class FooterComponent extends HTMLElement {
               alt="NSA Logo"
               class="h-20 w-28 md:h-28 md:w-36"
             />
-            <nav class="text-xs font-semibold md:space-x-5 md:flex text-primary">
-              <h1>HOME</h1>
-              <h1>ORGANIZATION</h1>
-              <h1>NEWS</h1>
-              <h1>GALLERY</h1>
-              <h1>CONTACT US</h1>
+            <nav class="text-xs md:space-x-5 md:flex text-primary">
+            <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
+            <h1 class="font-medium"><a href="./about_us.html">ORGANIZATION</a></h1>
+            <h1 class="font-medium"><a href="./news.html">NEWS</a></h1>
+            <h1 class="font-medium"><a href="./gallery.html">GALLERY</a></h1>
+            <h1 class="font-medium"><a href="./contact.html">CONTACT US</a></h1>
             </nav>
           </div>
           <div class="flex flex-col space-y-5">
