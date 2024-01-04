@@ -34,15 +34,165 @@
       <header-component></header-component>
 
       <div class="absolute top-0 w-full h-full">
-        <hero-background-component></hero-background-component>
+        <div class="relative h-[400px] overflow-hidden">
+          <img
+            src="../public/images/winter-ski-panorama-alps.jpg"
+            alt="SKI Background"
+            class="object-cover w-full h-full"
+          />
+          <div
+            class="absolute top-0 h-[400px] w-full bg-black opacity-90 z-[20]"
+          >
+            <div
+              class="h-full w-full flex flex-col items-center justify-center text-white space-y-5"
+            >
+              <div class="text-xs md:text-sm py-1 px-2 bg-primary text-white rounded-xl">
+                SKIING
+              </div>
+              <h1 class="text-2xl md:text-4xl text-center">
+                Elevate Your Riding Experience with the Latest Innovations
+              </h1>
+              <h1 class="text-xs md:text-sm">BY JANE DOE . MAY 15, 2023 . 0 COMMENTS</h1>
+            </div>
+          </div>
+          <section
+            class="h-[300px] overflow-hidden absolute z-10 top-[100px] right-5 md:right-[5.5rem] max-w-4xl"
+          >
+            <div
+              class="flex flex-col font-bold text-2xl md:text-4xl lg:text-5xl xl:text-[70px] text-right leading-none"
+            >
+              <img
+                src="../public/images/vector.png"
+                alt="Vector image"
+                class="w-full h-full opacity-40"
+              />
+            </div>
+          </section>
+        </div>
 
-        <div class="w-full h-auto container mx-auto mt-10 flex space-x-10">
-          <div class="w-2/3 px-32 flex flex-col space-y-5">
-           
+        <div
+          class="w-full h-auto container mx-auto mt-10 md:flex space-y-16 md:space-y-0 md:space-x-10"
+        >
+          <div class="w-full md:w-2/3 flex flex-col space-y-5">
+            <!-- news data begins -->
+            <div class="flex flex-col space-y-5">
+              <p class="text-base text-gray-400 text-justify">
+                Always strive for better work. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Phasellus eu grgvestibulum dolor, a
+                malesuada rjgrgrj jrigrigr jirdgs asdasifnnnfhfn Vestibulum
+                facilisis tincidunt leo quis accumsan. Quisque ornare enim quam,
+                id faucibus mi posuere nec. Fusce at justo ligulad. maximus
+                vitae enim eu tincidunt. Aliquam egestas leo sit ametf nunc
+                interdum ornare.
+              </p>
+              <h1 class="font-medium text-xl">Adopt New Technologies</h1>
+              <p class="text-base text-gray-400 text-justify">
+                In semper, metus non dapibus efficiturdf, lacus ligula luctus
+                metus, eget posuere arcu leo nec enimffdd. Pellentesque accumsan
+                elementum consequat. Vivamus vehicul tempor leo, ut lacinia
+                metus hendrerit faucibus. Fusce tellusd leo, tincidunt quis
+                turpis at, suscipit sagittis lectus jfdhjjdfjjjd. Suspendisse
+                quis iaculis eros. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec ac nibh nec leo
+                tincidunt eleifend. Nulla euismod suscipit purusdf nec faucibus.
+                Nunc efficitur sed nisi eget ultrices. Ut fringilladf luctus
+                dolor, eu facilisis magna eleifend nec. Aliquam eratdfdfd
+                volutpat.Vestibulum facilisis tincidunt leo quis accumsan.
+                Quisque ornare enim quam, id faucibus mi posuere nec. Fusce at
+                justo ligulad. maximus vitae enim eu tincidunt. Aliquam egestas
+                leo sit ametf nunc interdum ornare. In semper, metus non dapibus
+                efficiturdf, lacus ligula luctus metus, eget posuere arcu leo
+                nec enimffdd. Pellentesque accumsan elementum consequat. Vivamus
+                vehicul tempor leo, ut lacinia metus hendrerit faucibus. Fusce
+                tellusd leo, tincidunt quis turpis at, suscipit sagittis lectus
+                jfdhjjdfjjjd. Suspendisse quis iaculis eros. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec ac nibh nec leo tincidunt eleifend. Nulla euismod
+                suscipit purusdf nec faucibus. Nunc efficitur sed nisi eget
+                ultrices. Ut fringilladf luctus dolor, eu facilisis magna
+                eleifend nec. Aliquam eratdfdfd volutpat.
+              </p>
+            </div>
+
+            <!-- news data ends -->
+
+            <!-- comment form begins -->
+            <div class="w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+              <div class="">
+                <div class="">
+                  <h2 class="text-xl text-gray-800 font-medium sm:text-3xl">
+                    Leave A Reply
+                  </h2>
+                  <h2 class="text-xs text-gray-800 mt-1">
+                    Your email address will not be published. Required fields
+                    are marked *
+                  </h2>
+                </div>
+
+                <div class="mt-5 relative z-10 bg-white sm:mt-10">
+                  <form>
+                    <div class="mb-4 sm:mb-8">
+                      <label
+                        for="hs-feedback-post-comment-name-1"
+                        class="block mb-2 text-sm font-medium text-primary"
+                        >Full name<sup class="text-red-600">*</sup></label
+                      >
+                      <input
+                        type="text"
+                        id="hs-feedback-post-comment-name-1"
+                        class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-primary disabled:opacity-50 disabled:pointer-events-none"
+                        placeholder="Full name"
+                      />
+                    </div>
+
+                    <div class="mb-4 sm:mb-8">
+                      <label
+                        for="hs-feedback-post-comment-email-1"
+                        class="block mb-2 text-sm font-medium text-primary"
+                        >Email address<sup class="text-red-600">*</sup></label
+                      >
+                      <input
+                        type="email"
+                        id="hs-feedback-post-comment-email-1"
+                        class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-primary disabled:opacity-50 disabled:pointer-events-none"
+                        placeholder="Email address"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="hs-feedback-post-comment-textarea-1"
+                        class="block mb-2 text-sm font-medium text-primary"
+                        >Comment<sup class="text-red-600">*</sup></label
+                      >
+                      <div class="mt-1">
+                        <textarea
+                          id="hs-feedback-post-comment-textarea-1"
+                          name="hs-feedback-post-comment-textarea-1"
+                          rows="3"
+                          class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-primary disabled:opacity-50 disabled:pointer-events-none"
+                          placeholder="Leave your comment here..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="mt-6">
+                      <button
+                        type="submit"
+                        class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-secondary text-white hover:bg-secondary/90 disabled:opacity-50 disabled:pointer-events-none"
+                      >
+                        Post Comment
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- comment form ends -->
           </div>
 
           <div
-            class="w-1/3 px-10 border border-l-gray-500 border-y-0 border-r-0"
+            class="w-full md:w-1/3 px-10 border border-l-gray-500 border-y-0 border-r-0"
           >
             <news-sidebar-component></news-sidebar-component>
           </div>

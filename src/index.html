@@ -38,10 +38,12 @@
       <header-component></header-component>
 
       <div class="absolute top-0 w-full h-[100vh]">
+
+        <!-- home page begins -->
         <img
           src="../public/images/background_1.png"
           alt="SKI Background"
-          class="object-cover w-full h-[100vh]"
+          class="object-fill md:object-cover w-full h-[100vh]"
         />
         <div
           class="absolute z-10 top-[40%] right-5 md:right-[5.5rem] max-w-4xl"
@@ -67,15 +69,18 @@
             </div>
           </div>
         </div>
+        <!-- home page ends -->
 
+
+        <!-- message from president -->
         <section
-          class="items-center justify-center px-10 py-5 mt-44 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex"
+          class="items-center justify-center px-10 py-5 mt-44 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex md:h-[100vh]"
         >
           <div class="aspect-square h-[300px] md:h-[350px] lg:h-[400px] ">
             <img src="../public/images/President_image.png" alt="President" class="rounded-3xl"/>
           </div>
-          <article class="flex flex-col space-y-5 md:max-w-xs">
-            <h1 class="text-xl font-semibold lg:text-2xl text-primary">
+          <article class="flex flex-col space-y-5 md:max-w-md">
+            <h1 class="text-xl font-medium lg:text-2xl text-primary">
               Message from President
             </h1>
             <p class="text-sm lg:text-base">
@@ -93,8 +98,10 @@
             </div>
           </article>
         </section>
+        <!-- message from president -->
 
-        <section class="relative w-full h-[100vh]">
+
+        <section class="relative w-full h-full">
           <img
             src="../public/images/background_2.png"
             alt="Background image"
@@ -103,7 +110,7 @@
           <img
             src="https://images.pexels.com/photos/2097110/pexels-photo-2097110.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Background image"
-            class="object-cover w-full h-full md:hidden"
+            class="object-cover w-full h-[70vh] md:hidden"
           />
 
           <div
@@ -129,7 +136,8 @@
           </div>
         </section>
 
-        <section class="container w-full mx-auto mt-16 h-[90vh]">
+        <!-- news section begins -->
+        <section class="container w-full mx-auto mt-5 md:mt-16 h-[90vh]">
           <h1 class="text-4xl md:text-[50px]">
             <span class="text-primary">Latest </span
             ><span class="font-bold text-secondary">News</span>
@@ -186,7 +194,9 @@
           <a href="./news.html"><h1 class="text-sm float-right mt-3 pr-28 text-secondary">Read all news <i class="fa-solid fa-arrow-right-long text-primary"></i></h1></a>
           
         </section>
+        <!-- news section ends -->
 
+        <!-- gallery section begins -->
         <section class="container relative mx-auto mt-2">
           <div class="absolute top-0 px-12 md:px-24 -z-10">
             <img
@@ -265,6 +275,8 @@
             </div>
           </div>
         </section>
+        <!-- gallery section ends -->
+
 
         <newsletter-component></newsletter-component>
 

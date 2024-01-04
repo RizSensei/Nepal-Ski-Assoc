@@ -17,11 +17,11 @@ class HeaderComponent extends HTMLElement{
                 class="w-24 h-16"
               />
               <nav class="hidden space-x-10 text-xs lg:flex">
-                <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
-                <h1 class="font-medium"><a href="./about_us.html">ORGANIZATION</a></h1>
-                <h1 class="font-medium"><a href="./news.html">NEWS</a></h1>
-                <h1 class="font-medium"><a href="./gallery.html">GALLERY</a></h1>
-                <h1 class="font-medium"><a href="./contact.html">CONTACT US</a></h1>
+                <h1 class="nav-item font-medium"><a href="./index.html">HOME</a></h1>
+                <h1 class="nav-item font-medium"><a href="./about_us.html">ORGANIZATION</a></h1>
+                <h1 class="nav-item font-medium"><a href="./news.html">NEWS</a></h1>
+                <h1 class="nav-item font-medium"><a href="./gallery.html">GALLERY</a></h1>
+                <h1 class="nav-item font-medium"><a href="./contact.html">CONTACT US</a></h1>
               </nav>
               <div>
                 <img
@@ -40,21 +40,22 @@ class HeaderComponent extends HTMLElement{
         class="absolute z-20 hidden text-sm text-black duration-500 ease-in-out bg-white rounded-lg right-[0.8rem] top-[5.2rem]"
         id="mobile_navbar"
       >
+      <a href="./index.html">
         <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-          <a href="">HOME</a>
-        </h1>
-        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-          <a href="">ORGANIZATION</a>
-        </h1>
-        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-          <a href="">NEWS</a>
-        </h1>
-        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-          <a href="">GALLERY</a>
-        </h1>
-        <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-          <a href="">CONTACT US</a>
-        </h1>
+          HOME
+        </h1></a>
+        <a href="./about_us.html"></a><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          ORGANIZATION
+        </h1></a>
+        <a href="./news.html"><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          NEWS
+        </h1></a>
+        <a href="./gallery.html"><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          GALLERY
+        </h1></a>
+        <a href="./contact.html"><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+          CONTACT US
+        </h1></a>
       </div>
       `
     }
@@ -66,7 +67,7 @@ class FooterComponent extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-    <footer class="relative h-[90vh] md:h-[50vh] w-full">
+    <footer class="relative h-[40vh] md:h-[50vh] w-full">
     <section class="w-full">
       <div
         class="grid grid-cols-1 text-xs text-center border divide-y md:grid-cols-3 md:divide-x border-y-gray-200"
@@ -108,22 +109,22 @@ class FooterComponent extends HTMLElement {
           </div>
           <div class="flex flex-col space-y-5">
             <h1 class="text-sm font-semibold text-primary">ASSOCIATED WITH:</h1>
-            <div class="space-y-2 md:flex md:space-x-10">
+            <div class="flex space-x-10">
               <img
                 src="../public/images/nepal_olympic_committee_logo.png"
                 alt=""
-                class="w-28 h-28 md:w-24 md:h-24"
+                class="w-16 h-16 md:w-24 md:h-24"
               />
               <img
                 src="../public/images/FIS_logo.png"
                 alt=""
-                class="w-28 h-28 md:w-24 md:h-24"
+                class="w-16 h-16 md:w-24 md:h-24"
               />
             </div>
           </div>
         </div>
       </div>
-      <div class="flex justify-between h-12 px-12">
+      <div class="flex justify-between h-12 px-6 md:px-12">
         <div class="flex py-4 space-x-5 text-primary">
           <a href="">
             <i class="fa-brands fa-facebook"></i>
@@ -139,14 +140,14 @@ class FooterComponent extends HTMLElement {
           </a>
         </div>
         <div class="flex space-x-2">
-          <div class="overflow-hidden">
+          <div class="overflow-hidden hidden md:block">
             <img
               src="../public/images/vector.png"
               alt=""
               class="transform h-36 -scale-x-100"
             />
           </div>
-          <div class="flex py-4 space-x-5 text-xs">
+          <div class="flex py-4 space-x-2 md:space-x-5 text-xs">
             <h1>Terms & Conditions</h1>
             <h1>Privacy Policy</h1>
             <h1>Cookie Policy</h1>
@@ -191,12 +192,12 @@ class NewsletterComponent extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-      <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-20 lg:py-24 mt-12">
+      <div class="relative isolate overflow-hidden bg-gray-900 py-10 md:py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="w-full mx-auto flex flex-col items-center justify-center max-w-2xl gap-y-16 lg:max-w-none">
             <div class="max-w-xl lg:max-w-lg">
               <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Subscribe to our newsletter.</h2>
-              <p class="mt-4 text-base leading-6 text-gray-300">Sign up to be notified of the latest ski releases, news and exclusive promotions delivered right to your inbox.</p>
+              <p class="mt-4 text-sm md:text-base leading-6 text-gray-300">Sign up to be notified of the latest ski releases, news and exclusive promotions delivered right to your inbox.</p>
               <div class="mt-6 flex max-w-md gap-x-4">
                 <label for="email-address" class="sr-only">Email address</label>
                 <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">

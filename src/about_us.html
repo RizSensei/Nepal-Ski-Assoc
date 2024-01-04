@@ -47,7 +47,7 @@
       <div class="absolute top-0 w-full h-full">
         <hero-background-component></hero-background-component>
 
-        <div class="container w-full px-10 mx-auto mt-10">
+        <div class="container w-full px-10 mx-auto mt-10 mb-10">
           <div class="flex space-x-5 font-medium">
             <button
               onclick="showTab('Introduction')"
@@ -87,7 +87,7 @@
             </div>
             <div class="w-full mt-5">
               <h1 class="text-base font-semibold text-secondary">Mission</h1>
-              <ul class="px-10 mt-1 list-disc text-sm">
+              <ul class="px-5 md:px-7 lg:px-10 mt-1 list-disc text-sm">
                 <li>
                   Identify, nurture, and develop the next generation of Nepali
                   skiing talent by implementing robust grassroots programs,
@@ -126,7 +126,7 @@
             class="flex flex-col items-center hidden mt-5 tabcontent"
           >
             <member-card-component></member-card-component>
-            <div class="grid grid-cols-5 gap-4 mt-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-5">
               <script>
                 for (var i = 0; i < 5; i++) {
                   document.write(`
@@ -141,7 +141,7 @@
             class="flex flex-col items-center hidden tabcontent mt-5"
           >
             <member-card-component></member-card-component>
-            <div class="grid grid-cols-5 gap-4 mt-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-5">
               <script>
                 for (var i = 0; i < 5; i++) {
                   document.write(`

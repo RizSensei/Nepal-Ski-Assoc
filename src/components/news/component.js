@@ -6,7 +6,7 @@ class NewsSidebarComponent extends HTMLElement {
         this.innerHTML = `
         <div class=" flex flex-col space-y-6">
         <!-- search -->
-        <div class="max-w-md w-full">
+        <div class="md:max-w-md w-full">
           <div
             class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden"
           >
@@ -38,14 +38,14 @@ class NewsSidebarComponent extends HTMLElement {
           </div>
         </div>
 
-        <hr class="h-1 w-full bg-gray-100" />
+        <hr class="h-0.5 w-full bg-gray-100" />
 
         <div class="w-full">
           <h1 class="text-primary font-medium text-xl">Recent Posts</h1>
           <div class="flex flex-col space-y-3 mt-5">
             <div class="w-full flex space-x-5">
               <div class="h-14 aspect-square bg-gray-300 rounded-md"></div>
-              <div class="w-full flex flex-col">
+              <div class="w-full flex flex-col text-gray-900">
                 <h1 class="text-sm font-medium">
                   Unleash Your Adventure: Taking a Look at the City Surfer
                 </h1>
@@ -54,7 +54,7 @@ class NewsSidebarComponent extends HTMLElement {
             </div>
             <div class="w-full flex space-x-5">
               <div class="h-14 aspect-square bg-gray-300 rounded-md"></div>
-              <div class="w-full flex flex-col">
+              <div class="w-full flex flex-col text-gray-900">
                 <h1 class="text-sm font-medium">
                   Unleash Your Adventure: Taking a Look at the City Surfer
                 </h1>
@@ -63,7 +63,7 @@ class NewsSidebarComponent extends HTMLElement {
             </div>
             <div class="w-full flex space-x-5">
               <div class="h-14 aspect-square bg-gray-300 rounded-md"></div>
-              <div class="w-full flex flex-col">
+              <div class="w-full flex flex-col text-gray-900">
                 <h1 class="text-sm font-medium">
                   Unleash Your Adventure: Taking a Look at the City Surfer
                 </h1>
@@ -72,7 +72,7 @@ class NewsSidebarComponent extends HTMLElement {
             </div>
             <div class="w-full flex space-x-5">
               <div class="h-14 aspect-square bg-gray-300 rounded-md"></div>
-              <div class="w-full flex flex-col">
+              <div class="w-full flex flex-col text-gray-900">
                 <h1 class="text-sm font-medium">
                   Unleash Your Adventure: Taking a Look at the City Surfer
                 </h1>
@@ -82,7 +82,7 @@ class NewsSidebarComponent extends HTMLElement {
           </div>
         </div>
 
-        <hr class="h-1 w-full bg-gray-100" />
+        <hr class="h-0.5 w-full bg-gray-100" />
 
         <div class="w-full">
           <h1 class="text-primary font-medium text-xl">Recent Comments</h1>
@@ -118,7 +118,7 @@ class NewsSidebarComponent extends HTMLElement {
           </div>
         </div>
 
-        <hr class="h-1 w-full bg-gray-100" />
+        <hr class="h-0.5 w-full bg-gray-100" />
 
         <div class="w-full">
           <h1 class="text-primary font-medium text-xl">Archives</h1>
@@ -142,7 +142,7 @@ class NewsSidebarComponent extends HTMLElement {
           </div>
         </div>
 
-        <hr class="h-1 w-full bg-gray-100" />
+        <hr class="h-0.5 w-full bg-gray-100" />
 
         <img src="../public/images/vector.png" alt="Vector Image" class="h-full w-full object-cover">
         </div>
