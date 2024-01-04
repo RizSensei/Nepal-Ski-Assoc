@@ -12,7 +12,7 @@ class MemberCardComponent extends HTMLElement {
         <h1 class="font-medium">Mr. Director Name</h1>
         <h1 class="text-sm">Director</h1>
       </div>
-  </div>
+    </div>
     `;
   }
 }

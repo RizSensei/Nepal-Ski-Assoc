@@ -25,4 +25,4 @@ function showTab(tabId) {
   }
 
   // Initialize the first tab
-  showTab('BOD');
+  showTab('Introduction');
