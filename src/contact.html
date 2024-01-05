@@ -31,24 +31,139 @@
   </head>
   <body>
     <div class="relative w-full h-full">
-      <header-component></header-component>
+      <!-- header begins -->
+      <header
+        class="fixed top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
+      >
+        <div
+          class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
+        >
+          <div class="flex items-center justify-between w-full space-x-5">
+            <img
+              src="../public/images/logo.png"
+              alt="NSA_logo"
+              class="w-24 h-16"
+            />
+            <nav class="hidden space-x-10 text-xs lg:flex">
+              <h1 class="font-medium nav-item">
+                <a href="./index.html">HOME</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./about_us.html">ORGANIZATION</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./news.html">NEWS</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./gallery.html">GALLERY</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./contact.html">CONTACT US</a>
+              </h1>
+            </nav>
+            <div>
+              <img
+                src="../public/images/nepal flag.png"
+                alt=""
+                class="w-16 h-16"
+              />
+            </div>
+          </div>
+          <button id="nav-hamburger" class="block lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </header>
+      
+      <!-- mobile navbar responsive begins -->
+      <div class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
+        id="mobile_navbar">
+        <div class="flex w-full h-full">
+          <div class="w-1/2 h-full py-3 bg-white">
+            <div class="w-full px-8">
+              <img
+                src="../public/images/logo.png"
+                alt="Logo"
+                class="w-24 h-20 mb-5"
+              />
+            </div>
+            <a href="./index.html">
+              <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Home
+              </h1></a
+            >
+            <a href="./about_us.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Organization
+              </h1></a
+            >
+            <a href="./news.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                News
+              </h1></a
+            >
+            <a href="./gallery.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Gallery
+              </h1></a
+            >
+            <a href="./contact.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Contact Us
+              </h1></a
+            >
+          </div>
+          <div
+            class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end"
+          >
+            <i
+              class="cursor-pointer fa-solid fa-xmark hover:scale-110"
+              id="close-mobile-navbar"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- mobile navbar responsive ends -->
+      
+      <!-- header ends -->
 
       <div class="absolute top-0 w-full h-full">
-        <hero-background-component></hero-background-component>
+        <!-- hero background begins  -->
+        <div class="h-[400px] overflow-hidden">
+          <img
+            src="../public/images/winter-ski-panorama-alps.jpg"
+            alt="SKI Background"
+            class="object-cover w-full h-full"
+          />
+          <section
+            class="h-[300px] overflow-hidden absolute z-10 top-[100px] right-5 md:right-[5.5rem] max-w-4xl"
+          >
+            <div
+              class="flex flex-col font-bold text-2xl md:text-4xl lg:text-5xl xl:text-[70px] text-right leading-none"
+            >
+              <img
+                src="../public/images/vector.png"
+                alt="Vector image"
+                class="w-full h-full opacity-40"
+              />
+            </div>
+          </section>
+        </div>
+        <!-- hero background ends  -->
 
-        <div class="w-full container mx-auto mt-10 px-10 flex space-x-10 mb-10">
-          <div class="w-full md:w-1/2 flex flex-col space-y-3">
+        <div class="container flex w-full px-10 mx-auto mt-10 mb-10 space-x-10">
+          <div class="flex flex-col w-full space-y-3 lg:w-1/2">
             <div class="flex flex-col">
-              <h1 class="text-3xl text-primary font-semibold">
+              <h1 class="text-xl font-semibold md:text-2xl lg:text-3xl text-primary">
                 Nepal Ski Association
               </h1>
               <hr
-                class="mt-2 h-1 w-36 bg-gradient-to-r from-primary to-secondary"
+                class="h-1 mt-2 w-36 bg-gradient-to-r from-primary to-secondary"
               />
             </div>
 
             <div class="flex flex-col space-y-2">
-              <h1 class="text-primary font-semibold">
+              <h1 class="font-semibold text-primary">
                 <i class="fa-solid fa-location-dot text-secondary"></i> Address
               </h1>
               <p class="text-sm">
@@ -56,38 +171,38 @@
               </p>
             </div>
             <div class="flex flex-col space-y-2">
-              <h1 class="text-primary font-semibold">
+              <h1 class="font-semibold text-primary">
                 <i class="fa-solid fa-phone text-secondary"></i> Telephone
               </h1>
               <p class="text-sm">977-1-4258514, 977-1-4278633</p>
             </div>
             <div class="flex flex-col space-y-2">
-              <h1 class="text-primary font-semibold">
+              <h1 class="font-semibold text-primary">
                 <i class="fa-solid fa-envelope text-secondary"></i> Email
               </h1>
               <p class="text-sm">
                 nepalski@nocnepal.org. npski_nepal@yahoo.com
               </p>
             </div>
-            <div class="flex space-x-2 text-primary font-semibold text-xl">
+            <div class="flex space-x-2 text-xl font-semibold text-primary">
               <a href="#"
                 ><i
-                  class="fa-brands fa-facebook hover:text-white hover:bg-primary hover:scale-110 rounded-full p-1"
+                  class="p-1 rounded-full fa-brands fa-facebook hover:text-white hover:bg-primary hover:scale-110"
                 ></i
               ></a>
               <a href="#"
                 ><i
-                  class="fa-brands fa-instagram hover:text-white hover:bg-primary hover:scale-110 rounded-full p-1"
+                  class="p-1 rounded-full fa-brands fa-instagram hover:text-white hover:bg-primary hover:scale-110"
                 ></i
               ></a>
               <a href="#"
                 ><i
-                  class="fa-brands fa-pinterest hover:text-white hover:bg-primary hover:scale-110 rounded-full p-1"
+                  class="p-1 rounded-full fa-brands fa-pinterest hover:text-white hover:bg-primary hover:scale-110"
                 ></i
               ></a>
               <a href="#"
                 ><i
-                  class="fa-brands fa-twitter hover:text-white hover:bg-primary hover:scale-110 rounded-full p-1"
+                  class="p-1 rounded-full fa-brands fa-twitter hover:text-white hover:bg-primary hover:scale-110"
                 ></i
               ></a>
             </div>
@@ -101,20 +216,386 @@
             ></iframe>
           </div>
 
-          <div class="hidden md:block relative w-1/2">
+          <div class="relative hidden w-1/2 lg:block">
             <div class="absolute z-30 -top-[12.5rem] left-[3.1rem] w-full">
               <!-- contact form  -->
-              <contact-form-component></contact-form-component>
+              <div
+              class="flex flex-col justify-center w-full max-w-lg min-h-full px-6 py-12 text-white lg:px-8 bg-gradient-to-r from-primary to-secondary md:rounded-xl"
+            >
+              <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <h2
+                  class="text-3xl font-bold leading-9 tracking-tight text-center text-white"
+                >
+                  Contact Us
+                </h2>
+              </div>
+      
+              <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium leading-6 text-white"
+                      >Email address</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <label
+                        for="name"
+                        class="block text-sm font-medium leading-6 text-white"
+                        >Name of Organization</label
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <label
+                        for="subject"
+                        class="block text-sm font-medium leading-6 text-white"
+                        >Subject</label
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        required
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <label
+                        for="message"
+                        class="block text-sm font-medium leading-6 text-white"
+                        >Message</label
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <textarea
+                        id="message"
+                        name="message"
+                        type="text"
+                        rows="5"
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                      ></textarea>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <button
+                      type="submit"
+                      class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Send a Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full mt-5 md:hidden">
-          <contact-form-component></contact-form-component>
+        <div class="w-full mt-5 lg:hidden">
+          <div
+            class="flex flex-col justify-center w-full min-h-full px-6 py-12 text-white lg:px-8 bg-gradient-to-r from-primary to-secondary lg:rounded-xl"
+          >
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+              <h2
+                class="text-3xl font-bold leading-9 tracking-tight text-center text-white"
+              >
+                Contact Us
+              </h2>
+            </div>
+
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+              <form class="space-y-6" action="#" method="POST">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium leading-6 text-white"
+                    >Email address</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="name"
+                      class="block text-sm font-medium leading-6 text-white"
+                      >Name of Organization</label
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="subject"
+                      class="block text-sm font-medium leading-6 text-white"
+                      >Subject</label
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <input
+                      id="subject"
+                      name="subject"
+                      type="text"
+                      required
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="message"
+                      class="block text-sm font-medium leading-6 text-white"
+                      >Message</label
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <textarea
+                      id="message"
+                      name="message"
+                      type="text"
+                      rows="5"
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Send a Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
 
-        <newsletter-component></newsletter-component>
-        <footer-component></footer-component>
+        <!-- newsletter begins  -->
+        <div
+          class="relative py-10 overflow-hidden bg-gray-900 isolate md:py-16 sm:py-20 lg:py-24"
+        >
+          <div class="px-6 mx-auto max-w-7xl lg:px-8">
+            <div
+              class="flex flex-col items-center justify-center w-full max-w-2xl mx-auto gap-y-16 lg:max-w-none"
+            >
+              <div class="max-w-xl lg:max-w-lg">
+                <h2
+                  class="text-lg font-bold tracking-tight text-white md:text-2xl"
+                >
+                  Subscribe to our newsletter.
+                </h2>
+                <p class="mt-4 text-xs leading-6 text-gray-300 md:text-sm">
+                  Sign up to be notified of the latest ski releases, news and
+                  exclusive promotions delivered right to your inbox.
+                </p>
+                <div class="flex max-w-md mt-6 gap-x-4">
+                  <label for="email-address" class="sr-only"
+                    >Email address</label
+                  >
+                  <input
+                    id="email-address"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-1 md:py-2 text-white shadow-sm  text-xs sm:leading-6"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute top-0 -translate-x-1/2 left-1/2 -z-10 blur-3xl xl:-top-6"
+            aria-hidden="true"
+          >
+            <div
+              class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-primary to-secondary opacity-30"
+              style="
+                clip-path: polygon(
+                  74.1% 44.1%,
+                  100% 61.6%,
+                  97.5% 26.9%,
+                  85.5% 0.1%,
+                  80.7% 2%,
+                  72.5% 32.5%,
+                  60.2% 62.4%,
+                  52.4% 68.1%,
+                  47.5% 58.3%,
+                  45.2% 34.5%,
+                  27.5% 76.7%,
+                  0.1% 64.9%,
+                  17.9% 100%,
+                  27.6% 76.8%,
+                  76.1% 97.7%,
+                  74.1% 44.1%
+                );
+              "
+            ></div>
+          </div>
+        </div>
+        <!-- newsletter ends  -->
+
+        <!-- footer begins  -->
+        <footer class="relative h-[40vh] md:h-[50vh] w-full">
+          <section class="w-full">
+            <div
+              class="grid grid-cols-1 text-xs text-center border divide-y md:grid-cols-3 md:divide-x border-y-gray-200"
+            >
+              <div class="py-2">
+                <h1>National Sports Council, Tripureshwor, Kathmandu</h1>
+                <h1 class="font-bold">Mailing Address:</h1>
+              </div>
+              <div class="py-2">
+                <h1>nepalski@nocnepal.org. npski_nepal@yahoo.com</h1>
+                <h1 class="font-bold">Email</h1>
+              </div>
+              <div class="py-2">
+                <h1>977-1-4258514, 977-1-4278633</h1>
+                <h1 class="font-bold">Phone</h1>
+              </div>
+            </div>
+          </section>
+          <img
+            src="../public/images/fade_background.png"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            class="absolute w-full -translate-x-1/2 -translate-y-1 top-1/2 left-1/2"
+          >
+            <div class="container flex justify-between px-10 mx-auto">
+              <div class="flex flex-col space-y-5">
+                <img
+                  src="../public/images/logo.png"
+                  alt="NSA Logo"
+                  class="h-20 w-28 md:h-28 md:w-36"
+                />
+                <nav class="text-xs md:space-x-5 md:flex text-primary">
+                  <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
+                  <h1 class="font-medium">
+                    <a href="./about_us.html">ORGANIZATION</a>
+                  </h1>
+                  <h1 class="font-medium"><a href="./news.html">NEWS</a></h1>
+                  <h1 class="font-medium">
+                    <a href="./gallery.html">GALLERY</a>
+                  </h1>
+                  <h1 class="font-medium">
+                    <a href="./contact.html">CONTACT US</a>
+                  </h1>
+                </nav>
+              </div>
+              <div class="flex flex-col space-y-5">
+                <h1 class="text-sm font-semibold text-primary">
+                  ASSOCIATED WITH:
+                </h1>
+                <div class="flex space-x-10">
+                  <img
+                    src="../public/images/nepal_olympic_committee_logo.png"
+                    alt=""
+                    class="w-16 h-16 md:w-24 md:h-24"
+                  />
+                  <img
+                    src="../public/images/FIS_logo.png"
+                    alt=""
+                    class="w-16 h-16 md:w-24 md:h-24"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between h-12 px-6 md:px-12">
+            <div class="flex py-4 space-x-5 text-primary">
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+            <div class="flex space-x-2">
+              <div class="hidden overflow-hidden md:block">
+                <img
+                  src="../public/images/vector.png"
+                  alt=""
+                  class="transform h-36 -scale-x-100"
+                />
+              </div>
+              <div class="flex py-4 space-x-2 text-xs md:space-x-5">
+                <h1>Terms & Conditions</h1>
+                <h1>Privacy Policy</h1>
+                <h1>Cookie Policy</h1>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer ends  -->
       </div>
     </div>
   </body>

@@ -44,7 +44,7 @@
     <div class="relative w-full h-full">
       <!-- header begins -->
       <header
-        class="sticky top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
+        class="fixed top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
       >
         <div
           class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
@@ -56,19 +56,19 @@
               class="w-24 h-16"
             />
             <nav class="hidden space-x-10 text-xs lg:flex">
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./index.html">HOME</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./about_us.html">ORGANIZATION</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./news.html">NEWS</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./gallery.html">GALLERY</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./contact.html">CONTACT US</a>
               </h1>
             </nav>
@@ -85,32 +85,57 @@
           </button>
         </div>
       </header>
-      <div
-        class="absolute z-20 hidden text-sm text-black duration-500 ease-in-out bg-white rounded-lg right-[0.8rem] top-[5.2rem]"
-        id="mobile_navbar"
-      >
-        <a href="./index.html">
-          <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">HOME</h1></a
-        >
-        <a href="./about_us.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            ORGANIZATION
-          </h1></a
-        >
-        <a href="./news.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">NEWS</h1></a
-        >
-        <a href="./gallery.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            GALLERY
-          </h1></a
-        >
-        <a href="./contact.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            CONTACT US
-          </h1></a
-        >
+      
+      <!-- mobile navbar responsive begins -->
+      <div class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
+        id="mobile_navbar">
+        <div class="flex w-full h-full">
+          <div class="w-1/2 h-full py-3 bg-white">
+            <div class="w-full px-8">
+              <img
+                src="../public/images/logo.png"
+                alt="Logo"
+                class="w-24 h-20 mb-5"
+              />
+            </div>
+            <a href="./index.html">
+              <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Home
+              </h1></a
+            >
+            <a href="./about_us.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Organization
+              </h1></a
+            >
+            <a href="./news.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                News
+              </h1></a
+            >
+            <a href="./gallery.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Gallery
+              </h1></a
+            >
+            <a href="./contact.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Contact Us
+              </h1></a
+            >
+          </div>
+          <div
+            class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end"
+          >
+            <i
+              class="cursor-pointer fa-solid fa-xmark hover:scale-110"
+              id="close-mobile-navbar"
+            ></i>
+          </div>
+        </div>
       </div>
+      <!-- mobile navbar responsive ends -->
+      
       <!-- header ends -->
 
       <div class="absolute top-0 w-full h-full">
@@ -160,24 +185,26 @@
             id="Introduction"
             class="flex flex-col mt-5 space-y-3 tabcontent"
           >
-            <h1 class="text-3xl font-bold text-primary">
+            <h1 class="text-2xl font-bold md:text-3xl text-primary">
               Nepal Ski Association
             </h1>
-            <p class="text-sm">
+            <p class="text-sm text-justify">
               Nepal Ski Association is the official federation regulating skiing
               within Nepal. Nepal Ski Association is founded to promote ski
               sports in Nepal. Winter sports are generally more common in the
               Himalayan regions of Nepal.
             </p>
             <div class="w-full">
-              <h1 class="text-lg font-semibold text-primary mt-10">
+              <h1 class="mt-10 text-lg font-semibold text-primary">
                 MISSION AND VISION
               </h1>
               <hr class="h-1 w-36 bg-gradient-to-r from-primary to-secondary" />
             </div>
             <div class="w-full mt-5">
               <h1 class="text-base font-semibold text-secondary">Mission</h1>
-              <ul class="px-5 md:px-7 lg:px-10 mt-1 list-disc text-sm">
+              <ul
+                class="px-5 mt-1 text-sm text-justify list-disc md:px-7 lg:px-10"
+              >
                 <li>
                   Identify, nurture, and develop the next generation of Nepali
                   skiing talent by implementing robust grassroots programs,
@@ -202,7 +229,7 @@
                 </li>
               </ul>
             </div>
-            <div class="w-full">
+            <div class="w-full text-justify">
               <h1 class="text-base font-semibold text-secondary">Vision</h1>
               <p class="px-8 mt-1 text-sm">
                 "To be a globally recognized hub for alpine excellence,
@@ -218,10 +245,10 @@
             <div
               class="shadow-2xl w-44 md:w-48 lg:w-52 h-60 md:h-64 lg:h-72 shadow-gray-200"
             >
-              <div class="w-full h-44 md:h-48 lg:h-52 bg-gray-200">
+              <div class="w-full bg-gray-200 h-44 md:h-48 lg:h-52">
                 <img
                   src="../../public/images/President_image.png"
-                  class="h-full w-full object-cover"
+                  class="object-cover w-full h-full"
                 />
               </div>
               <div class="w-full h-full mt-3 text-center text-primary">
@@ -230,14 +257,14 @@
               </div>
             </div>
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-5"
+              class="grid grid-cols-2 gap-4 mt-5 md:grid-cols-3 lg:grid-cols-5"
             >
               <script>
                 for (var i = 0; i < 5; i++) {
                   document.write(`
                       <div class="shadow-2xl w-44 md:w-48 lg:w-52 h-60 md:h-64 lg:h-72 shadow-gray-200">
-                        <div class="w-full h-44 md:h-48 lg:h-52 bg-gray-200">
-                          <img src = "../../public/images/President_image.png" class="h-full w-full object-cover"/>
+                        <div class="w-full bg-gray-200 h-44 md:h-48 lg:h-52">
+                          <img src = "../../public/images/President_image.png" class="object-cover w-full h-full"/>
                         </div>
                         <div class="w-full h-full mt-3 text-center text-primary">
                           <h1 class="font-medium">Mr. Director Name</h1>
@@ -251,15 +278,15 @@
           </div>
           <div
             id="Management"
-            class="flex flex-col items-center hidden tabcontent mt-5"
+            class="flex flex-col items-center hidden mt-5 tabcontent"
           >
             <div
               class="shadow-2xl w-44 md:w-48 lg:w-52 h-60 md:h-64 lg:h-72 shadow-gray-200"
             >
-              <div class="w-full h-44 md:h-48 lg:h-52 bg-gray-200">
+              <div class="w-full bg-gray-200 h-44 md:h-48 lg:h-52">
                 <img
                   src="../../public/images/President_image.png"
-                  class="h-full w-full object-cover"
+                  class="object-cover w-full h-full"
                 />
               </div>
               <div class="w-full h-full mt-3 text-center text-primary">
@@ -268,14 +295,14 @@
               </div>
             </div>
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-5"
+              class="grid grid-cols-2 gap-4 mt-5 md:grid-cols-3 lg:grid-cols-5"
             >
               <script>
                 for (var i = 0; i < 5; i++) {
                   document.write(`
                     <div class="shadow-2xl w-44 md:w-48 lg:w-52 h-60 md:h-64 lg:h-72 shadow-gray-200">
-                      <div class="w-full h-44 md:h-48 lg:h-52 bg-gray-200">
-                        <img src = "../../public/images/President_image.png" class="h-full w-full object-cover"/>
+                      <div class="w-full bg-gray-200 h-44 md:h-48 lg:h-52">
+                        <img src = "../../public/images/President_image.png" class="object-cover w-full h-full"/>
                       </div>
                       <div class="w-full h-full mt-3 text-center text-primary">
                         <h1 class="font-medium">Mr. Director Name</h1>
@@ -291,23 +318,23 @@
 
         <!-- newsletter begins  -->
         <div
-          class="relative isolate overflow-hidden bg-gray-900 py-10 md:py-16 sm:py-20 lg:py-24"
+          class="relative py-10 overflow-hidden bg-gray-900 isolate md:py-16 sm:py-20 lg:py-24"
         >
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div
-              class="w-full mx-auto flex flex-col items-center justify-center max-w-2xl gap-y-16 lg:max-w-none"
+              class="flex flex-col items-center justify-center w-full max-w-2xl mx-auto gap-y-16 lg:max-w-none"
             >
               <div class="max-w-xl lg:max-w-lg">
                 <h2
-                  class="text-2xl font-bold tracking-tight text-white sm:text-3xl"
+                  class="text-lg font-bold tracking-tight text-white md:text-2xl"
                 >
                   Subscribe to our newsletter.
                 </h2>
-                <p class="mt-4 text-sm md:text-base leading-6 text-gray-300">
+                <p class="mt-4 text-xs leading-6 text-gray-300 md:text-sm">
                   Sign up to be notified of the latest ski releases, news and
                   exclusive promotions delivered right to your inbox.
                 </p>
-                <div class="mt-6 flex max-w-md gap-x-4">
+                <div class="flex max-w-md mt-6 gap-x-4">
                   <label for="email-address" class="sr-only"
                     >Email address</label
                   >
@@ -317,7 +344,7 @@
                     type="email"
                     autocomplete="email"
                     required
-                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-1 md:py-2 text-white shadow-sm  text-xs sm:leading-6"
                     placeholder="Enter your email"
                   />
                   <button
@@ -331,7 +358,7 @@
             </div>
           </div>
           <div
-            class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+            class="absolute top-0 -translate-x-1/2 left-1/2 -z-10 blur-3xl xl:-top-6"
             aria-hidden="true"
           >
             <div
@@ -369,15 +396,15 @@
             >
               <div class="py-2">
                 <h1>National Sports Council, Tripureshwor, Kathmandu</h1>
-                <h1 class="font-bold">Mailing Address:</h1>
+                <h1 class="mt-1 font-bold">Mailing Address:</h1>
               </div>
               <div class="py-2">
                 <h1>nepalski@nocnepal.org. npski_nepal@yahoo.com</h1>
-                <h1 class="font-bold">Email</h1>
+                <h1 class="mt-1 font-bold">Email</h1>
               </div>
               <div class="py-2">
                 <h1>977-1-4258514, 977-1-4278633</h1>
-                <h1 class="font-bold">Phone</h1>
+                <h1 class="mt-1 font-bold">Phone</h1>
               </div>
             </div>
           </section>
@@ -387,16 +414,16 @@
             class="object-cover w-full h-full"
           />
           <div
-            class="absolute w-full -translate-x-1/2 -translate-y-1 top-1/2 left-1/2"
+            class="absolute w-full -translate-x-1/2 translate-y-[5.75rem] md:-translate-y-1 top-1/2 left-1/2"
           >
             <div class="container flex justify-between px-10 mx-auto">
               <div class="flex flex-col space-y-5">
                 <img
                   src="../public/images/logo.png"
                   alt="NSA Logo"
-                  class="h-20 w-28 md:h-28 md:w-36"
+                  class="w-24 h-20 md:w-32 md:h-28"
                 />
-                <nav class="text-xs md:space-x-5 md:flex text-primary">
+                <nav class="hidden text-xs md:space-x-5 md:flex text-primary">
                   <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
                   <h1 class="font-medium">
                     <a href="./about_us.html">ORGANIZATION</a>
@@ -411,7 +438,7 @@
                 </nav>
               </div>
               <div class="flex flex-col space-y-5">
-                <h1 class="text-sm font-semibold text-primary">
+                <h1 class="text-xs font-semibold md:text-sm text-primary">
                   ASSOCIATED WITH:
                 </h1>
                 <div class="flex space-x-10">
@@ -429,8 +456,10 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between h-12 px-6 md:px-12">
-            <div class="flex py-4 space-x-5 text-primary">
+          <div class="flex justify-end h-12 px-6 md:justify-between md:px-12">
+            <div
+              class="items-center hidden py-4 space-x-2 md:flex md:space-x-5 text-primary"
+            >
               <a href="">
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -445,14 +474,14 @@
               </a>
             </div>
             <div class="flex space-x-2">
-              <div class="overflow-hidden hidden md:block">
+              <div class="hidden overflow-hidden md:block">
                 <img
                   src="../public/images/vector.png"
                   alt=""
                   class="transform h-36 -scale-x-100"
                 />
               </div>
-              <div class="flex py-4 space-x-2 md:space-x-5 text-xs">
+              <div class="flex py-4 space-x-2 text-xs md:space-x-5">
                 <h1>Terms & Conditions</h1>
                 <h1>Privacy Policy</h1>
                 <h1>Cookie Policy</h1>

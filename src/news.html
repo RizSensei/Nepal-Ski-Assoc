@@ -33,7 +33,7 @@
     <div class="relative w-full h-full">
       <!-- header begins -->
       <header
-        class="sticky top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
+        class="fixed top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
       >
         <div
           class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
@@ -45,19 +45,19 @@
               class="w-24 h-16"
             />
             <nav class="hidden space-x-10 text-xs lg:flex">
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./index.html">HOME</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./about_us.html">ORGANIZATION</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./news.html">NEWS</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./gallery.html">GALLERY</a>
               </h1>
-              <h1 class="nav-item font-medium">
+              <h1 class="font-medium nav-item">
                 <a href="./contact.html">CONTACT US</a>
               </h1>
             </nav>
@@ -74,32 +74,58 @@
           </button>
         </div>
       </header>
+      <!-- mobile navbar responsive begins -->
       <div
-        class="absolute z-20 hidden text-sm text-black duration-500 ease-in-out bg-white rounded-lg right-[0.8rem] top-[5.2rem]"
+        class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
         id="mobile_navbar"
       >
-        <a href="./index.html">
-          <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">HOME</h1></a
-        >
-        <a href="./about_us.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            ORGANIZATION
-          </h1></a
-        >
-        <a href="./news.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">NEWS</h1></a
-        >
-        <a href="./gallery.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            GALLERY
-          </h1></a
-        >
-        <a href="./contact.html"
-          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-            CONTACT US
-          </h1></a
-        >
+        <div class="flex w-full h-full">
+          <div class="w-1/2 h-full py-3 bg-white">
+            <div class="w-full px-8">
+              <img
+                src="../public/images/logo.png"
+                alt="Logo"
+                class="w-24 h-20 mb-5"
+              />
+            </div>
+            <a href="./index.html">
+              <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Home
+              </h1></a
+            >
+            <a href="./about_us.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Organization
+              </h1></a
+            >
+            <a href="./news.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                News
+              </h1></a
+            >
+            <a href="./gallery.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Gallery
+              </h1></a
+            >
+            <a href="./contact.html"
+              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+                Contact Us
+              </h1></a
+            >
+          </div>
+          <div
+            class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end"
+          >
+            <i
+              class="cursor-pointer fa-solid fa-xmark hover:scale-110"
+              id="close-mobile-navbar"
+            ></i>
+          </div>
+        </div>
       </div>
+      <!-- mobile navbar responsive ends -->
+      
       <!-- header ends -->
 
       <div class="absolute top-0 w-full h-full">
@@ -126,30 +152,31 @@
         </div>
         <!-- hero background ends  -->
 
-        <div class="w-full flex flex-col items-center">
+        <div class="flex flex-col items-center w-full pt-10">
           <h1 class="text-3xl font-semibold text-center">
             <span class="text-primary">Latest </span
             ><span class="text-secondary">News</span>
           </h1>
           <hr
-            class="mt-2 h-1 w-36 bg-gradient-to-r from-primary to-secondary"
+            class="h-1 mt-2 w-36 bg-gradient-to-r from-primary to-secondary"
           />
         </div>
         <div
-          class="w-full h-auto container mx-auto mt-10 md:flex space-y-16 md:space-y-0 md:space-x-10 mb-10"
+          class="container w-full h-auto mx-auto mt-10 mb-10 space-y-16 md:flex md:space-y-0 md:space-x-10"
         >
-          <div class="w-full md:w-2/3 px-10 flex flex-col space-y-5">
-            <div class="w-full rounded-xl border border-gray-300 h-auto">
+          <!-- news list begins  -->
+          <div class="flex flex-col w-full px-10 space-y-5 md:w-2/3">
+            <div class="w-full h-auto border border-gray-300 rounded-xl">
               <div class="">
                 <img
                   src="../public/images/news-image.jpg"
                   alt=""
-                  class="h-full w-full object-fill rounded-tr-xl rounded-tl-xl"
+                  class="object-fill w-full h-full rounded-tr-xl rounded-tl-xl"
                 />
               </div>
-              <div class="flex flex-col space-y-4 p-5">
-                <h1 class="text-xs text-primary font-medium">SKIING</h1>
-                <h1 class="text-xl text-primary font-medium">
+              <div class="flex flex-col p-5 space-y-4">
+                <h1 class="text-xs font-medium text-primary">SKIING</h1>
+                <h1 class="text-xl font-medium text-primary">
                   Elevate Your Riding Experience with the Latest Innovations
                 </h1>
                 <h1 class="text-xs text-gray-800">
@@ -164,7 +191,7 @@
                 </h1>
                 <div class="">
                   <button
-                    class="group text-sm py-2 px-3 rounded-xl border border-gray-700 hover:bg-primary hover:text-white"
+                    class="px-3 py-2 text-sm border border-gray-700 group rounded-xl hover:bg-primary hover:text-white"
                   >
                     <a href="./detailed_news.html"
                       >Continue Reading
@@ -176,17 +203,17 @@
                 </div>
               </div>
             </div>
-            <div class="w-full rounded-xl border border-gray-300 h-auto">
+            <div class="w-full h-auto border border-gray-300 rounded-xl">
               <div class="">
                 <img
                   src="../public/images/news-image.jpg"
                   alt=""
-                  class="h-full w-full object-fill rounded-tr-xl rounded-tl-xl"
+                  class="object-fill w-full h-full rounded-tr-xl rounded-tl-xl"
                 />
               </div>
-              <div class="flex flex-col space-y-4 p-5">
-                <h1 class="text-xs text-primary font-medium">SKIING</h1>
-                <h1 class="text-xl text-primary font-medium">
+              <div class="flex flex-col p-5 space-y-4">
+                <h1 class="text-xs font-medium text-primary">SKIING</h1>
+                <h1 class="text-xl font-medium text-primary">
                   Elevate Your Riding Experience with the Latest Innovations
                 </h1>
                 <h1 class="text-xs text-gray-800">
@@ -201,7 +228,7 @@
                 </h1>
                 <div class="">
                   <button
-                    class="group text-sm py-2 px-3 rounded-xl border border-gray-700 hover:bg-primary hover:text-white"
+                    class="px-3 py-2 text-sm border border-gray-700 group rounded-xl hover:bg-primary hover:text-white"
                   >
                     <a href="./detailed_news.html"
                       >Continue Reading
@@ -214,23 +241,24 @@
               </div>
             </div>
           </div>
+          <!-- news list ends  -->
 
           <div
-            class="w-full md:w-1/3 px-10 border border-l-gray-200 border-y-0 border-r-0"
+            class="w-full px-10 border border-r-0 md:w-1/3 border-l-gray-200 border-y-0"
           >
             <!-- news sidebar begins  -->
             <div class="flex flex-col space-y-6">
               <!-- search -->
-              <div class="md:max-w-md w-full">
+              <div class="w-full md:max-w-md">
                 <div
-                  class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden"
+                  class="relative flex items-center w-full h-12 overflow-hidden bg-white rounded-lg focus-within:shadow-lg"
                 >
                   <div
-                    class="grid place-items-center h-full w-12 text-gray-900 bg-gray-200"
+                    class="grid w-12 h-full text-gray-900 bg-gray-200 place-items-center"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
+                      class="w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -245,7 +273,7 @@
                   </div>
 
                   <input
-                    class="peer h-full w-full outline-none text-sm text-gray-700 pr-2 bg-gray-200"
+                    class="w-full h-full pr-2 text-sm text-gray-700 bg-gray-200 outline-none peer"
                     type="text"
                     id="search"
                     placeholder="Search something.."
@@ -256,46 +284,46 @@
               <hr class="h-0.5 w-full bg-gray-100" />
 
               <div class="w-full">
-                <h1 class="text-primary font-medium text-xl">Recent Posts</h1>
-                <div class="flex flex-col space-y-3 mt-5">
-                  <div class="w-full flex space-x-5">
+                <h1 class="text-xl font-medium text-primary">Recent Posts</h1>
+                <div class="flex flex-col mt-5 space-y-3">
+                  <div class="flex w-full space-x-5">
                     <div
-                      class="h-14 aspect-square bg-gray-300 rounded-md"
+                      class="bg-gray-300 rounded-md h-14 aspect-square"
                     ></div>
-                    <div class="w-full flex flex-col text-gray-900">
+                    <div class="flex flex-col w-full text-gray-900">
                       <h1 class="text-sm font-medium">
                         Unleash Your Adventure: Taking a Look at the City Surfer
                       </h1>
                       <h1 class="text-xs">june 21, 2023</h1>
                     </div>
                   </div>
-                  <div class="w-full flex space-x-5">
+                  <div class="flex w-full space-x-5">
                     <div
-                      class="h-14 aspect-square bg-gray-300 rounded-md"
+                      class="bg-gray-300 rounded-md h-14 aspect-square"
                     ></div>
-                    <div class="w-full flex flex-col text-gray-900">
+                    <div class="flex flex-col w-full text-gray-900">
                       <h1 class="text-sm font-medium">
                         Unleash Your Adventure: Taking a Look at the City Surfer
                       </h1>
                       <h1 class="text-xs">june 21, 2023</h1>
                     </div>
                   </div>
-                  <div class="w-full flex space-x-5">
+                  <div class="flex w-full space-x-5">
                     <div
-                      class="h-14 aspect-square bg-gray-300 rounded-md"
+                      class="bg-gray-300 rounded-md h-14 aspect-square"
                     ></div>
-                    <div class="w-full flex flex-col text-gray-900">
+                    <div class="flex flex-col w-full text-gray-900">
                       <h1 class="text-sm font-medium">
                         Unleash Your Adventure: Taking a Look at the City Surfer
                       </h1>
                       <h1 class="text-xs">june 21, 2023</h1>
                     </div>
                   </div>
-                  <div class="w-full flex space-x-5">
+                  <div class="flex w-full space-x-5">
                     <div
-                      class="h-14 aspect-square bg-gray-300 rounded-md"
+                      class="bg-gray-300 rounded-md h-14 aspect-square"
                     ></div>
-                    <div class="w-full flex flex-col text-gray-900">
+                    <div class="flex flex-col w-full text-gray-900">
                       <h1 class="text-sm font-medium">
                         Unleash Your Adventure: Taking a Look at the City Surfer
                       </h1>
@@ -308,32 +336,32 @@
               <hr class="h-0.5 w-full bg-gray-100" />
 
               <div class="w-full">
-                <h1 class="text-primary font-medium text-xl">
+                <h1 class="text-xl font-medium text-primary">
                   Recent Comments
                 </h1>
-                <div class="flex flex-col space-y-3 mt-5 px-3 text-sm">
-                  <div class="w-full flex items-center space-x-5">
+                <div class="flex flex-col px-3 mt-5 space-y-3 text-sm">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-message text-primary"></i>
                     <h1>
                       <span class="font-medium">Jane Doe</span> on
                       <span class="font-medium">White Tee</span>
                     </h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-message text-primary"></i>
                     <h1>
                       <span class="font-medium">Jane Doe</span> on
                       <span class="font-medium">White Tee</span>
                     </h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-message text-primary"></i>
                     <h1>
                       <span class="font-medium">Jane Doe</span> on
                       <span class="font-medium">White Tee</span>
                     </h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-message text-primary"></i>
                     <h1>
                       <span class="font-medium">Jane Doe</span> on
@@ -346,21 +374,21 @@
               <hr class="h-0.5 w-full bg-gray-100" />
 
               <div class="w-full">
-                <h1 class="text-primary font-medium text-xl">Archives</h1>
-                <div class="flex flex-col space-y-3 mt-5 px-3 text-sm">
-                  <div class="w-full flex items-center space-x-5">
+                <h1 class="text-xl font-medium text-primary">Archives</h1>
+                <div class="flex flex-col px-3 mt-5 space-y-3 text-sm">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-arrow-right-long text-primary"></i>
                     <h1>September, 2023</h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-arrow-right-long text-primary"></i>
                     <h1>October, 2023</h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-arrow-right-long text-primary"></i>
                     <h1>November, 2023</h1>
                   </div>
-                  <div class="w-full flex items-center space-x-5">
+                  <div class="flex items-center w-full space-x-5">
                     <i class="fa-solid fa-arrow-right-long text-primary"></i>
                     <h1>December, 2023</h1>
                   </div>
@@ -372,7 +400,7 @@
               <img
                 src="../public/images/vector.png"
                 alt="Vector Image"
-                class="h-full w-full object-cover"
+                class="object-cover w-full h-full"
               />
             </div>
             <!-- news sidebar ends  -->
@@ -381,23 +409,23 @@
 
         <!-- newsletter begins  -->
         <div
-          class="relative isolate overflow-hidden bg-gray-900 py-10 md:py-16 sm:py-20 lg:py-24"
+          class="relative py-10 overflow-hidden bg-gray-900 isolate md:py-16 sm:py-20 lg:py-24"
         >
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div
-              class="w-full mx-auto flex flex-col items-center justify-center max-w-2xl gap-y-16 lg:max-w-none"
+              class="flex flex-col items-center justify-center w-full max-w-2xl mx-auto gap-y-16 lg:max-w-none"
             >
               <div class="max-w-xl lg:max-w-lg">
                 <h2
-                  class="text-2xl font-bold tracking-tight text-white sm:text-3xl"
+                  class="text-lg font-bold tracking-tight text-white md:text-2xl"
                 >
                   Subscribe to our newsletter.
                 </h2>
-                <p class="mt-4 text-sm md:text-base leading-6 text-gray-300">
+                <p class="mt-4 text-xs leading-6 text-gray-300 md:text-sm">
                   Sign up to be notified of the latest ski releases, news and
                   exclusive promotions delivered right to your inbox.
                 </p>
-                <div class="mt-6 flex max-w-md gap-x-4">
+                <div class="flex max-w-md mt-6 gap-x-4">
                   <label for="email-address" class="sr-only"
                     >Email address</label
                   >
@@ -407,7 +435,7 @@
                     type="email"
                     autocomplete="email"
                     required
-                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-1 md:py-2 text-white shadow-sm  text-xs sm:leading-6"
                     placeholder="Enter your email"
                   />
                   <button
@@ -421,7 +449,7 @@
             </div>
           </div>
           <div
-            class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+            class="absolute top-0 -translate-x-1/2 left-1/2 -z-10 blur-3xl xl:-top-6"
             aria-hidden="true"
           >
             <div
@@ -535,14 +563,14 @@
               </a>
             </div>
             <div class="flex space-x-2">
-              <div class="overflow-hidden hidden md:block">
+              <div class="hidden overflow-hidden md:block">
                 <img
                   src="../public/images/vector.png"
                   alt=""
                   class="transform h-36 -scale-x-100"
                 />
               </div>
-              <div class="flex py-4 space-x-2 md:space-x-5 text-xs">
+              <div class="flex py-4 space-x-2 text-xs md:space-x-5">
                 <h1>Terms & Conditions</h1>
                 <h1>Privacy Policy</h1>
                 <h1>Cookie Policy</h1>

@@ -35,79 +35,53 @@
   </head>
   <body class="relative">
     <div class="relative w-full h-full">
-            <!-- header begins -->
-            <header
-            class="sticky top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
-          >
-            <div
-              class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
-            >
-              <div class="flex items-center justify-between w-full space-x-5">
-                <img
-                  src="../public/images/logo.png"
-                  alt="NSA_logo"
-                  class="w-24 h-16"
-                />
-                <nav class="hidden space-x-10 text-xs lg:flex">
-                  <h1 class="nav-item font-medium">
-                    <a href="./index.html">HOME</a>
-                  </h1>
-                  <h1 class="nav-item font-medium">
-                    <a href="./about_us.html">ORGANIZATION</a>
-                  </h1>
-                  <h1 class="nav-item font-medium">
-                    <a href="./news.html">NEWS</a>
-                  </h1>
-                  <h1 class="nav-item font-medium">
-                    <a href="./gallery.html">GALLERY</a>
-                  </h1>
-                  <h1 class="nav-item font-medium">
-                    <a href="./contact.html">CONTACT US</a>
-                  </h1>
-                </nav>
-                <div>
-                  <img
-                    src="../public/images/nepal flag.png"
-                    alt=""
-                    class="w-16 h-16"
-                  />
-                </div>
-              </div>
-              <button id="nav-hamburger" class="block lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-              </button>
+      <!-- header begins -->
+      <header
+        class="fixed top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
+      >
+        <div
+          class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
+        >
+          <div class="flex items-center justify-between w-full space-x-5">
+            <img
+              src="../public/images/logo.png"
+              alt="NSA_logo"
+              class="w-24 h-16"
+            />
+            <nav class="hidden space-x-10 text-xs lg:flex">
+              <h1 class="font-medium nav-item">
+                <a href="./index.html">HOME</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./about_us.html">ORGANIZATION</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./news.html">NEWS</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./gallery.html">GALLERY</a>
+              </h1>
+              <h1 class="font-medium nav-item">
+                <a href="./contact.html">CONTACT US</a>
+              </h1>
+            </nav>
+            <div>
+              <img
+                src="../public/images/nepal flag.png"
+                alt=""
+                class="w-16 h-16"
+              />
             </div>
-          </header>
-          <div
-            class="absolute z-20 hidden text-sm text-black duration-500 ease-in-out bg-white rounded-lg right-[0.8rem] top-[5.2rem]"
-            id="mobile_navbar"
-          >
-            <a href="./index.html">
-              <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">HOME</h1></a
-            >
-            <a href="./about_us.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                ORGANIZATION
-              </h1></a
-            >
-            <a href="./news.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">NEWS</h1></a
-            >
-            <a href="./gallery.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                GALLERY
-              </h1></a
-            >
-            <a href="./contact.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                CONTACT US
-              </h1></a
-            >
           </div>
-          <!-- header ends -->
+          <button id="nav-hamburger" class="block lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- header ends -->
 
       <div class="absolute top-0 w-full h-[100vh]">
-
         <!-- home page begins -->
         <img
           src="../public/images/background_1.png"
@@ -140,13 +114,16 @@
         </div>
         <!-- home page ends -->
 
-
         <!-- message from president -->
         <section
-          class="items-center justify-center px-10 py-5 mt-44 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex md:h-[100vh]"
+          class="items-center justify-center px-10 py-5 mt-24 lg:mt-44 mb-24 space-y-5 md:space-y-0 md:space-x-14 lg:space-x-20 md:flex lg:h-[100vh]"
         >
-          <div class="aspect-square h-[300px] md:h-[350px] lg:h-[400px] ">
-            <img src="../public/images/President_image.png" alt="President" class="rounded-3xl"/>
+          <div class="aspect-square h-[300px] md:h-[350px] lg:h-[400px]">
+            <img
+              src="../public/images/President_image.png"
+              alt="President"
+              class="rounded-3xl"
+            />
           </div>
           <article class="flex flex-col space-y-5 md:max-w-md">
             <h1 class="text-xl font-medium lg:text-2xl text-primary">
@@ -169,7 +146,6 @@
         </section>
         <!-- message from president -->
 
-
         <section class="relative w-full h-full">
           <img
             src="../public/images/background_2.png"
@@ -179,7 +155,7 @@
           <img
             src="https://images.pexels.com/photos/2097110/pexels-photo-2097110.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Background image"
-            class="object-cover w-full h-[70vh] md:hidden"
+            class="object-cover w-full h-full md:hidden"
           />
 
           <div
@@ -206,7 +182,7 @@
         </section>
 
         <!-- news section begins -->
-        <section class="container w-full mx-auto mt-5 md:mt-16 h-[90vh]">
+        <section class="container w-full mx-auto mt-5 lg:mt-16 h-[90vh]">
           <h1 class="text-4xl md:text-[50px]">
             <span class="text-primary">Latest </span
             ><span class="font-bold text-secondary">News</span>
@@ -260,13 +236,18 @@
               />
             </div>
           </div>
-          <a href="./news.html"><h1 class="text-sm float-right mt-3 pr-28 text-secondary">Read all news <i class="fa-solid fa-arrow-right-long text-primary"></i></h1></a>
-          
+          <div class="w-full">
+            <a href="./news.html"
+            ><h1 class="float-right mt-3 text-sm pr-28 text-secondary">
+              Read all news
+              <i class="fa-solid fa-arrow-right-long text-primary"></i></h1
+          ></a>
+          </div>
         </section>
         <!-- news section ends -->
 
         <!-- gallery section begins -->
-        <section class="container relative mx-auto mt-2">
+        <!-- <section class="container relative mx-auto mt-2 mb-10">
           <div class="absolute top-0 px-12 md:px-24 -z-10">
             <img
               src="../public/images/vector.png"
@@ -343,29 +324,28 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- gallery section ends -->
-
 
         <!-- newsletter begins  -->
         <div
-          class="relative isolate overflow-hidden bg-gray-900 py-10 md:py-16 sm:py-20 lg:py-24"
+          class="relative py-10 overflow-hidden bg-gray-900 isolate md:py-16 sm:py-20 lg:py-24"
         >
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div
-              class="w-full mx-auto flex flex-col items-center justify-center max-w-2xl gap-y-16 lg:max-w-none"
+              class="flex flex-col items-center justify-center w-full max-w-2xl mx-auto gap-y-16 lg:max-w-none"
             >
               <div class="max-w-xl lg:max-w-lg">
                 <h2
-                  class="text-2xl font-bold tracking-tight text-white sm:text-3xl"
+                  class="text-lg font-bold tracking-tight text-white md:text-2xl"
                 >
                   Subscribe to our newsletter.
                 </h2>
-                <p class="mt-4 text-sm md:text-base leading-6 text-gray-300">
+                <p class="mt-4 text-xs leading-6 text-gray-300 md:text-sm">
                   Sign up to be notified of the latest ski releases, news and
                   exclusive promotions delivered right to your inbox.
                 </p>
-                <div class="mt-6 flex max-w-md gap-x-4">
+                <div class="flex max-w-md mt-6 gap-x-4">
                   <label for="email-address" class="sr-only"
                     >Email address</label
                   >
@@ -375,7 +355,7 @@
                     type="email"
                     autocomplete="email"
                     required
-                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                    class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-1 md:py-2 text-white shadow-sm  text-xs sm:leading-6"
                     placeholder="Enter your email"
                   />
                   <button
@@ -389,7 +369,7 @@
             </div>
           </div>
           <div
-            class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+            class="absolute top-0 -translate-x-1/2 left-1/2 -z-10 blur-3xl xl:-top-6"
             aria-hidden="true"
           >
             <div
@@ -503,14 +483,14 @@
               </a>
             </div>
             <div class="flex space-x-2">
-              <div class="overflow-hidden hidden md:block">
+              <div class="hidden overflow-hidden md:block">
                 <img
                   src="../public/images/vector.png"
                   alt=""
                   class="transform h-36 -scale-x-100"
                 />
               </div>
-              <div class="flex py-4 space-x-2 md:space-x-5 text-xs">
+              <div class="flex py-4 space-x-2 text-xs md:space-x-5">
                 <h1>Terms & Conditions</h1>
                 <h1>Privacy Policy</h1>
                 <h1>Cookie Policy</h1>
@@ -521,6 +501,49 @@
         <!-- footer ends  -->
       </div>
     </div>
+    <!-- mobile navbar responsive begins -->
+    <div
+      class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
+      id="mobile_navbar"
+    >
+    <div class="flex w-full h-full">
+      <div class="w-1/2 h-full py-3 bg-white">
+        <div class="w-full px-8">
+          <img
+            src="../public/images/logo.png"
+            alt="Logo"
+            class="w-24 h-20 mb-5"
+          />
+        </div>
+        <a href="./index.html">
+          <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">Home</h1></a
+        >
+        <a href="./about_us.html"
+          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+            Organization
+          </h1></a
+        >
+        <a href="./news.html"
+          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">News</h1></a
+        >
+        <a href="./gallery.html"
+          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+            Gallery
+          </h1></a
+        >
+        <a href="./contact.html"
+          ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+            Contact Us
+          </h1></a
+        >
+      </div>
+      <div class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end">
+        <i class="cursor-pointer fa-solid fa-xmark hover:scale-110" id="close-mobile-navbar"></i>
+      </div>
+    </div>
+      
+    </div>
+    <!-- mobile navbar responsive ends -->
   </body>
 
   <!-- script -->
