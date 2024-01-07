@@ -44,97 +44,99 @@
     <div class="relative w-full h-full">
       <!-- header begins -->
       <header
-        class="fixed top-0 w-full h-auto py-2 text-white z-[100] bg-gradient-to-b from-primary to-transparent opacity-90"
+      class="fixed top-0 w-full h-auto pt-2 text-white z-[100] bg-primary/70"
+    >
+      <div
+        class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
       >
-        <div
-          class="container flex items-center justify-between w-full px-5 pb-2 mx-auto border border-t-0 border-b-white border-x-0"
-        >
-          <div class="flex items-center justify-between w-full space-x-5">
+        <div class="flex items-center justify-between w-full space-x-5">
+          <img
+            src="../public/images/logo.png"
+            alt="NSA_logo"
+            class="w-24 h-16"
+          />
+          <nav class="hidden space-x-10 text-xs lg:flex">
+            <h1 class="font-medium nav-item">
+              <a href="./index.html">HOME</a>
+            </h1>
+            <h1 class="font-medium nav-item">
+              <a href="./about_us.html">ORGANIZATION</a>
+            </h1>
+            <h1 class="font-medium nav-item">
+              <a href="./news.html">NEWS</a>
+            </h1>
+            <h1 class="font-medium nav-item">
+              <a href="./gallery.html">GALLERY</a>
+            </h1>
+            <h1 class="font-medium nav-item">
+              <a href="./contact.html">CONTACT US</a>
+            </h1>
+          </nav>
+          <div>
+            <img
+              src="../public/images/nepal flag.png"
+              alt=""
+              class="w-16 h-16"
+            />
+          </div>
+        </div>
+        <button id="nav-hamburger" class="block lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+      
+    <!-- mobile navbar responsive begins -->
+    <div
+      class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
+      id="mobile_navbar"
+    >
+      <div class="flex w-full h-full">
+        <div class="w-1/2 h-full py-3 bg-white">
+          <div class="w-full px-8">
             <img
               src="../public/images/logo.png"
-              alt="NSA_logo"
-              class="w-24 h-16"
+              alt="Logo"
+              class="w-[7rem] h-20 mb-5"
             />
-            <nav class="hidden space-x-10 text-xs lg:flex">
-              <h1 class="font-medium nav-item">
-                <a href="./index.html">HOME</a>
-              </h1>
-              <h1 class="font-medium nav-item">
-                <a href="./about_us.html">ORGANIZATION</a>
-              </h1>
-              <h1 class="font-medium nav-item">
-                <a href="./news.html">NEWS</a>
-              </h1>
-              <h1 class="font-medium nav-item">
-                <a href="./gallery.html">GALLERY</a>
-              </h1>
-              <h1 class="font-medium nav-item">
-                <a href="./contact.html">CONTACT US</a>
-              </h1>
-            </nav>
-            <div>
-              <img
-                src="../public/images/nepal flag.png"
-                alt=""
-                class="w-16 h-16"
-              />
-            </div>
           </div>
-          <button id="nav-hamburger" class="block lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </header>
-      
-      <!-- mobile navbar responsive begins -->
-      <div class="fixed top-0 left-0 z-[110] hidden flex text-sm text-black duration-500 ease-in-out bg-gray-100/90 h-[100vh] w-full"
-        id="mobile_navbar">
-        <div class="flex w-full h-full">
-          <div class="w-1/2 h-full py-3 bg-white">
-            <div class="w-full px-8">
-              <img
-                src="../public/images/logo.png"
-                alt="Logo"
-                class="w-24 h-20 mb-5"
-              />
-            </div>
-            <a href="./index.html">
-              <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                Home
-              </h1></a
-            >
-            <a href="./about_us.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                Organization
-              </h1></a
-            >
-            <a href="./news.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                News
-              </h1></a
-            >
-            <a href="./gallery.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                Gallery
-              </h1></a
-            >
-            <a href="./contact.html"
-              ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
-                Contact Us
-              </h1></a
-            >
-          </div>
-          <div
-            class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end"
+          <a href="./index.html">
+            <h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+              Home
+            </h1></a
           >
-            <i
-              class="cursor-pointer fa-solid fa-xmark hover:scale-110"
-              id="close-mobile-navbar"
-            ></i>
-          </div>
+          <a href="./about_us.html"
+            ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+              Organization
+            </h1></a
+          >
+          <a href="./news.html"
+            ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+              News
+            </h1></a
+          >
+          <a href="./gallery.html"
+            ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+              Gallery
+            </h1></a
+          >
+          <a href="./contact.html"
+            ><h1 class="px-8 py-3 hover:bg-gray-400 hover:text-white">
+              Contact Us
+            </h1></a
+          >
+        </div>
+        <div
+          class="flex justify-end w-1/2 h-full px-5 mt-8 text-xl text-red-500 flex-end"
+        >
+          <i
+            class="cursor-pointer fa-solid fa-xmark hover:scale-110"
+            id="close-mobile-navbar"
+          ></i>
         </div>
       </div>
-      <!-- mobile navbar responsive ends -->
+    </div>
+    <!-- mobile navbar responsive ends -->
       
       <!-- header ends -->
 
@@ -423,6 +425,22 @@
                   alt="NSA Logo"
                   class="w-24 h-20 md:w-32 md:h-28"
                 />
+                <div
+                class="items-center space-x-2 md:hidden text-primary"
+              >
+                <a href="" class="text-[#0866ff]">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="text-[#0866ff]">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="text-[#e60023]">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </div>
                 <nav class="hidden text-xs md:space-x-5 md:flex text-primary">
                   <h1 class="font-medium"><a href="./index.html">HOME</a></h1>
                   <h1 class="font-medium">
